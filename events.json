@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titolo": "Serata Pizza Napoletana DOC",
+    "data": "2026-06-14",
+    "orario": "20:00",
+    "descrizione": "Una serata dedicata alla vera pizza napoletana con impasto a lunga lievitazione e forno a legna.",
+    "tag": "speciale"
+  },
+  {
+    "id": 2,
+    "titolo": "Live Acoustic + Pizza",
+    "data": "2026-06-21",
+    "orario": "19:30",
+    "descrizione": "Musica dal vivo ogni sabato sera. Prenota il tuo tavolo con il menù degustazione.",
+    "tag": "musica"
+  },
+  {
+    "id": 3,
+    "titolo": "Workshop: Impara a fare la Pizza",
+    "data": "2026-07-05",
+    "orario": "17:00",
+    "descrizione": "Un pomeriggio hands-on dove impari i segreti dell'impasto direttamente con il nostro pizzaiolo.",
+    "tag": "workshop"
+  }
+]

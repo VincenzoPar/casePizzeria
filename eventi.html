@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CASÈ — Pizzeria artigianale a Milano. Impasto 48h, forno a legna, ingredienti locali."
+    />
+    <title>CASÈ — Pizzeria Artigianale Milano</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              linen: "#F0EAE0",
+              ink: "#07090A",
+              spruce: "#29411E",
+              red: "#C4272A",
+              offwhite: "#FAFAF7",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "sans-serif"],
+              body: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="bg-linen text-ink">
+    <!---NAVBAR--->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html">
+            <img src="./assets/logoNeroCase.svg" alt="CASÈ logo" width="90" height="70" />
+          </a>
+
+          <!-- Desktop links -->
+          <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="chi-siamo.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Chi Siamo</a
+              >
+            </li>
+            <li>
+              <a href="eventi.html" class="nav-link active text-white"
+                >Eventi</a
+              >
+            </li>
+            <li>
+              <a
+                href="contatti.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Contatti</a
+              >
+            </li>
+          </ul>
+
+          <!-- Desktop CTA -->
+          <a href="contatti.html" class="hidden md:inline-block btn-cta"
+            >PRENOTA →</a
+          >
+
+          <!-- Hamburger -->
+          <button
+            id="hamburger"
+            class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
+            aria-label="Apri menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-spruce border-t border-white/10"
+      >
+        <ul
+          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0 px-6 py-4"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block text-white py-3 text-sm border-b border-white/10 no-underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="chi-siamo.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Chi Siamo</a
+            >
+          </li>
+          <li>
+            <a
+              href="eventi.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Eventi</a
+            >
+          </li>
+          <li>
+            <a
+              href="contatti.html"
+              class="block text-white/75 hover:text-white py-3 text-sm no-underline transition-colors"
+              >Contatti</a
+            >
+          </li>
+          <li class="pt-3">
+            <a href="contatti.html" class="btn-cta block text-center py-3"
+              >PRENOTA →</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+     MAIN
+═══════════════════════════════════════ -->
+    <main class="pt-16">
+      <div>Eventiiiiiiii</div>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+    <footer class="bg-spruce text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <img src="./assets/logocASE.svg" alt="CASÈ logo" width="150" height="100" />
+            </div>
+            <p class="text-white/55 text-sm leading-relaxed max-w-xs">
+              Più di una pizzeria — un angolo accogliente dove rallentare e
+              stare bene.
+            </p>
+            <div class="flex gap-2 mt-5">
+              <a
+                href="#"
+                class="social-btn"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-btn"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-btn"
+                aria-label="TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Nav -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Navigazione
+            </p>
+            <ul class="flex flex-col gap-2 list-none p-0 m-0">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li>
+                <a href="chi-siamo.html" class="footer-link">Chi Siamo</a>
+              </li>
+              <li><a href="eventi.html" class="footer-link">Eventi</a></li>
+              <li><a href="contatti.html" class="footer-link">Contatti</a></li>
+            </ul>
+          </div>
+          <!-- Contacts -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Dove Siamo
+            </p>
+            <div class="flex flex-col gap-2">
+              <span class="footer-link">Via Roma 12, Milano</span>
+              <a href="tel:+390212345678" class="footer-link"
+                >+39 02 1234 5678</a
+              >
+              <a href="mailto:ciao@casepizzeria.it" class="footer-link"
+                >ciao@casepizzeria.it</a
+              >
+              <span class="text-white/35 text-xs mt-1"
+                >Mar–Dom: 12:00–15:00 · 19:00–23:30</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
+        >
+          <p class="text-white/30 text-xs">
+            © 2026 CASÈ Pizzeria. Tutti i diritti riservati.
+          </p>
+          <p class="text-white/30 text-xs">P.IVA 12345678901</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ── Navbar hamburger ──────────────────────────
+      var hamburger = document.getElementById("hamburger");
+      var mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ── Carica eventi da JSON ─────────────────────
+      var months = [
+        "GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC",
+      ];
+      fetch("./events.json")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (events) {
+          var c = document.getElementById("events-container");
+          c.innerHTML = events
+            .slice(0, 3)
+            .map(function (ev) {
+              var d = new Date(ev.data);
+              var day = String(d.getDate()).padStart(2, "0");
+              var mon = months[d.getMonth()];
+              return (
+                '<div class="event-card reveal">' +
+                '<div class="event-badge">' +
+                day +
+                " " +
+                mon +
+                "</div>" +
+                '<h3 style="font-family:Barlow Condensed,sans-serif;font-weight:700;font-size:1.2rem;text-transform:uppercase;line-height:1.1;margin-bottom:0.5rem;">' +
+                ev.titolo +
+                "</h3>" +
+                '<p style="font-size:0.85rem;color:rgba(7,9,10,0.55);line-height:1.65;margin-bottom:1rem;">' +
+                ev.descrizione +
+                "</p>" +
+                '<div style="display:flex;align-items:center;justify-content:space-between;">' +
+                '<span style="font-size:0.78rem;color:rgba(7,9,10,0.4);">ore ' +
+                ev.orario +
+                "</span>" +
+                '<span class="event-tag-chip">' +
+                ev.tag +
+                "</span>" +
+                "</div>" +
+                "</div>"
+              );
+            })
+            .join("");
+        })
+        .catch(function () {
+          document.getElementById("events-container").innerHTML =
+            '<p style="color:rgba(7,9,10,0.4);font-size:0.875rem;grid-column:1/-1;">Nessun evento disponibile al momento.</p>';
+        });
+    </script>
+  </body>
+</html>
