@@ -5,6 +5,8 @@
     "data": "2026-06-14",
     "orario": "20:00",
     "descrizione": "Una serata dedicata alla vera pizza napoletana con impasto a lunga lievitazione e forno a legna.",
+    "descrizione-lunga": "Un evento speciale per gli amanti della pizza, dove potrai gustare la vera pizza napoletana preparata con ingredienti di alta qualità e cotta nel forno a legna. Durante la serata, il nostro pizzaiolo esperto ti guiderà attraverso il processo di preparazione dell'impasto a lunga lievitazione e condividerà i segreti per ottenere una pizza perfetta. Non perdere questa occasione unica di assaporare la tradizione culinaria italiana in un'atmosfera accogliente e festosa.",
+    "img": "assets/eventi/pizza-napoletana.jpg",
     "tag": "speciale"
   },
   {
@@ -13,6 +15,7 @@
     "data": "2026-06-21",
     "orario": "19:30",
     "descrizione": "Musica dal vivo ogni sabato sera. Prenota il tuo tavolo con il menù degustazione.",
+    "img": "assets/eventi/live-music.jpeg",
     "tag": "musica"
   },
   {
@@ -21,6 +24,7 @@
     "data": "2026-07-05",
     "orario": "17:00",
     "descrizione": "Un pomeriggio hands-on dove impari i segreti dell'impasto direttamente con il nostro pizzaiolo.",
+    "img": "assets/eventi/corso-pizza.jpeg",
     "tag": "workshop"
   }
 ]

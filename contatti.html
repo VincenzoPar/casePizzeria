@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CASÈ — Pizzeria artigianale a Milano. Impasto 48h, forno a legna, ingredienti locali."
+      content="Contatta CASÈ — Pizzeria artigianale a Milano. Prenotazioni, eventi privati, informazioni e orari."
     />
-    <title>CASÈ — Pizzeria Artigianale Milano</title>
+    <title>CASÈ — Contatti</title>
 
-    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -31,7 +30,6 @@
       };
     </script>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,14 +38,11 @@
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
+
   <body class="bg-linen text-ink">
-    <!-- ═══════════════════════════════════════
-     NAVBAR
-═══════════════════════════════════════ -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex items-center justify-between h-16">
-          <!-- Logo -->
           <a href="index.html">
             <img
               src="./assets/logoNeroCase.svg"
@@ -57,7 +52,6 @@
             />
           </a>
 
-          <!-- Desktop links -->
           <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
             <li>
               <a
@@ -87,12 +81,10 @@
             </li>
           </ul>
 
-          <!-- Desktop CTA -->
           <a href="contatti.html" class="hidden md:inline-block btn-cta"
             >GO TO THE MENU →</a
           >
 
-          <!-- Hamburger -->
           <button
             id="hamburger"
             class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
@@ -103,13 +95,12 @@
         </div>
       </div>
 
-      <!-- Mobile menu -->
       <div
         id="mobile-menu"
         class="md:hidden bg-spruce border-t border-white/10"
       >
         <ul
-          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0 px-6 py-4"
+          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0"
         >
           <li>
             <a
@@ -135,7 +126,7 @@
           <li>
             <a
               href="contatti.html"
-              class="block text-white/75 hover:text-white py-3 text-sm no-underline transition-colors"
+              class="block text-white py-3 text-sm no-underline"
               >Contatti</a
             >
           </li>
@@ -148,20 +139,268 @@
       </div>
     </nav>
 
-    <!-- ═══════════════════════════════════════
-     MAIN
-═══════════════════════════════════════ -->
     <main class="pt-16">
-      <div>Contattiiiiii</div>
+      <section class="bg-spruce text-white px-6 py-16 md:py-24">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end"
+        >
+          <div class="lg:col-span-7">
+            <p
+              class="text-white/45 text-xs tracking-[0.22em] uppercase font-semibold mb-4"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Contact
+            </p>
+            <h1
+              class="text-5xl md:text-7xl uppercase leading-none"
+              style="
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+              "
+            >
+              Let’s find your table
+            </h1>
+            <p
+              class="text-white/70 text-sm md:text-base mt-5 max-w-xl leading-relaxed"
+            >
+              Per prenotazioni, eventi privati o semplicemente per venirci a
+              trovare, qui trovi tutti i riferimenti utili.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div
+              class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 backdrop-blur-sm"
+            >
+              <p
+                class="text-white/40 text-xs tracking-[0.18em] uppercase font-semibold mb-4"
+                style="font-family: 'Barlow Condensed', sans-serif"
+              >
+                Quick Info
+              </p>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    Phone
+                  </div>
+                  <a
+                    href="tel:+390212345678"
+                    class="text-white hover:text-white/75"
+                    >+39 02 1234 5678</a
+                  >
+                </div>
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    Email
+                  </div>
+                  <a
+                    href="mailto:ciao@casepizzeria.it"
+                    class="text-white hover:text-white/75"
+                    >ciao@casepizzeria.it</a
+                  >
+                </div>
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    Address
+                  </div>
+                  <p class="text-white/85">Via Roma 12, Milano</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-14 md:py-20">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6"
+        >
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Call Us
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+              "
+            >
+              Reservations
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Per prenotare il tuo tavolo o chiedere disponibilità in giornata.
+            </p>
+            <a
+              href="tel:+390212345678"
+              class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+            >
+              +39 02 1234 5678
+            </a>
+          </article>
+
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Write Us
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+              "
+            >
+              Events & Info
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Per eventi privati, collaborazioni o qualsiasi informazione utile.
+            </p>
+            <a
+              href="mailto:ciao@casepizzeria.it"
+              class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+            >
+              ciao@casepizzeria.it
+            </a>
+          </article>
+
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Opening Hours
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+              "
+            >
+              See You Soon
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Siamo aperti dal martedì alla domenica, pranzo e cena.
+            </p>
+            <p class="text-ink/80 text-sm">
+              Mar–Dom: 12:00–15:00 · 19:00–23:30
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="px-6 pb-16 md:pb-20">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8"
+        >
+          <div class="bg-spruce text-white rounded-[28px] p-6 md:p-8">
+            <p
+              class="text-white/40 text-xs tracking-[0.18em] uppercase font-semibold mb-3"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Visit Us
+            </p>
+            <h2
+              class="text-4xl md:text-5xl uppercase leading-none mb-4"
+              style="
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+              "
+            >
+              In the heart of Milan
+            </h2>
+            <p class="text-white/70 text-sm leading-relaxed mb-6 max-w-md">
+              Un posto caldo, semplice e autentico. Perfetto per una cena lenta,
+              una pizza tra amici o una serata speciale.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Address
+                </div>
+                <p class="text-white/90">Via Roma 12, Milano</p>
+              </div>
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Hours
+                </div>
+                <p class="text-white/90">Mar–Dom: 12:00–15:00 · 19:00–23:30</p>
+              </div>
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Booking
+                </div>
+                <a
+                  href="tel:+390212345678"
+                  class="text-white/90 hover:text-white"
+                >
+                  +39 02 1234 5678
+                </a>
+              </div>
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Email
+                </div>
+                <a
+                  href="mailto:ciao@casepizzeria.it"
+                  class="text-white/90 hover:text-white"
+                >
+                  ciao@casepizzeria.it
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-offwhite border border-black/10 rounded-[28px] overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps?q=Via+Roma+12+Milano&output=embed"
+              class="w-full aspect-[4/3] border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          
+            <div class="p-5 border-t border-black/10">
+              <a
+                href="https://maps.google.com/?q=Via+Roma+12+Milano"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+              >
+                Open in Maps →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- ═══════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════ -->
     <footer class="bg-spruce text-white py-16 px-6">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          <!-- Brand -->
           <div>
             <div class="flex items-center gap-2 mb-3">
               <img
@@ -239,7 +478,7 @@
               </a>
             </div>
           </div>
-          <!-- Nav -->
+
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
@@ -256,7 +495,7 @@
               <li><a href="contatti.html" class="footer-link">Contatti</a></li>
             </ul>
           </div>
-          <!-- Contacts -->
+
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
@@ -278,6 +517,7 @@
             </div>
           </div>
         </div>
+
         <div
           class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
         >
@@ -290,76 +530,19 @@
     </footer>
 
     <script>
-      // ── Navbar hamburger ──────────────────────────
       var hamburger = document.getElementById("hamburger");
       var mobileMenu = document.getElementById("mobile-menu");
+
       hamburger.addEventListener("click", function () {
         hamburger.classList.toggle("open");
         mobileMenu.classList.toggle("open");
       });
+
       window.addEventListener("scroll", function () {
         document
           .getElementById("navbar")
           .classList.toggle("scrolled", window.scrollY > 20);
       });
-
-      // ── Carica eventi da JSON ─────────────────────
-      var months = [
-        "GEN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAG",
-        "GIU",
-        "LUG",
-        "AGO",
-        "SET",
-        "OTT",
-        "NOV",
-        "DIC",
-      ];
-      fetch("./events.json")
-        .then(function (r) {
-          return r.json();
-        })
-        .then(function (events) {
-          var c = document.getElementById("events-container");
-          c.innerHTML = events
-            .slice(0, 3)
-            .map(function (ev) {
-              var d = new Date(ev.data);
-              var day = String(d.getDate()).padStart(2, "0");
-              var mon = months[d.getMonth()];
-              return (
-                '<div class="event-card reveal">' +
-                '<div class="event-badge">' +
-                day +
-                " " +
-                mon +
-                "</div>" +
-                '<h3 style="font-family:Barlow Condensed,sans-serif;font-weight:700;font-size:1.2rem;text-transform:uppercase;line-height:1.1;margin-bottom:0.5rem;">' +
-                ev.titolo +
-                "</h3>" +
-                '<p style="font-size:0.85rem;color:rgba(7,9,10,0.55);line-height:1.65;margin-bottom:1rem;">' +
-                ev.descrizione +
-                "</p>" +
-                '<div style="display:flex;align-items:center;justify-content:space-between;">' +
-                '<span style="font-size:0.78rem;color:rgba(7,9,10,0.4);">ore ' +
-                ev.orario +
-                "</span>" +
-                '<span class="event-tag-chip">' +
-                ev.tag +
-                "</span>" +
-                "</div>" +
-                "</div>"
-              );
-            })
-            .join("");
-        })
-        .catch(function () {
-          document.getElementById("events-container").innerHTML =
-            '<p style="color:rgba(7,9,10,0.4);font-size:0.875rem;grid-column:1/-1;">Nessun evento disponibile al momento.</p>';
-        });
     </script>
   </body>
 </html>
