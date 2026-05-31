@@ -1,30 +1,52 @@
 [
   {
     "id": 1,
-    "titolo": "Serata Pizza Napoletana DOC",
+    "titolo": "Neapolitan Pizza Night",
     "data": "2026-06-14",
     "orario": "20:00",
-    "descrizione": "Una serata dedicata alla vera pizza napoletana con impasto a lunga lievitazione e forno a legna.",
-    "descrizione-lunga": "Un evento speciale per gli amanti della pizza, dove potrai gustare la vera pizza napoletana preparata con ingredienti di alta qualità e cotta nel forno a legna. Durante la serata, il nostro pizzaiolo esperto ti guiderà attraverso il processo di preparazione dell'impasto a lunga lievitazione e condividerà i segreti per ottenere una pizza perfetta. Non perdere questa occasione unica di assaporare la tradizione culinaria italiana in un'atmosfera accogliente e festosa.",
+    "descrizione": "A night dedicated to true Neapolitan pizza with long-fermented dough and a wood-fired oven.",
+    "descrizione-lunga": "A special evening for pizza lovers, where you can enjoy authentic Neapolitan pizza made with high-quality ingredients and baked in a wood-fired oven. During the event, our expert pizzaiolo will guide you through the long-fermentation dough process and share the secrets behind a perfect pizza. Don’t miss this unique opportunity to experience Italian culinary tradition in a warm and festive atmosphere.",
     "img": "assets/eventi/pizza-napoletana.jpg",
-    "tag": "speciale"
+    "tag": "special"
   },
   {
     "id": 2,
-    "titolo": "Live Acoustic + Pizza",
+    "titolo": "Wine & Pizza Pairing Night",
     "data": "2026-06-21",
-    "orario": "19:30",
-    "descrizione": "Musica dal vivo ogni sabato sera. Prenota il tuo tavolo con il menù degustazione.",
-    "img": "assets/eventi/live-music.jpeg",
-    "tag": "musica"
+    "orario": "20:30",
+    "descrizione": "An elegant evening of pizza and wine pairings selected to enhance every flavor.",
+    "descrizione-lunga": "Join us for a refined tasting experience where artisan pizzas meet carefully selected Italian wines. Each course will be paired to highlight the character of the dough, the toppings, and the balance between aroma and taste. Our team will introduce every pairing and explain why each wine brings out the best in the matching pizza.",
+    "img": "assets/eventi/wine-pizza-pairing.jpg",
+    "tag": "tasting"
   },
   {
     "id": 3,
-    "titolo": "Workshop: Impara a fare la Pizza",
+    "titolo": "Live Music Saturday",
     "data": "2026-07-05",
-    "orario": "17:00",
-    "descrizione": "Un pomeriggio hands-on dove impari i segreti dell'impasto direttamente con il nostro pizzaiolo.",
-    "img": "assets/eventi/corso-pizza.jpeg",
-    "tag": "workshop"
+    "orario": "21:00",
+    "descrizione": "Live acoustic music, great pizza, and a relaxed atmosphere for your Saturday night.",
+    "descrizione-lunga": "Spend your Saturday evening at CASÈ with live acoustic performances, fresh pizza from the oven, and a cozy atmosphere made for sharing. The event is designed to create the perfect mix of music, food, and conviviality, making it an ideal night out with friends, family, or someone special.",
+    "img": "assets/eventi/live-music-saturday.jpg",
+    "tag": "music"
+  },
+  {
+    "id": 4,
+    "titolo": "Kids Pizza Workshop",
+    "data": "2026-07-12",
+    "orario": "18:00",
+    "descrizione": "A fun workshop where children can make their own pizza with the help of our staff.",
+    "descrizione-lunga": "This family-friendly workshop is designed to let children discover the joy of making pizza from scratch. With the support of our staff, they will learn how to stretch the dough, choose toppings, and watch their creation bake in the oven. It’s a playful and educational experience that brings families together around the table.",
+    "img": "assets/eventi/kids-pizza-workshop.jpg",
+    "tag": "family"
+  },
+  {
+    "id": 5,
+    "titolo": "Summer Tasting Menu",
+    "data": "2026-07-26",
+    "orario": "20:00",
+    "descrizione": "A seasonal tasting menu featuring summer ingredients, signature pizzas, and desserts.",
+    "descrizione-lunga": "Celebrate the flavors of summer with a curated tasting menu that highlights seasonal ingredients, signature pizzas, and a selection of desserts. Each dish is designed to showcase freshness, balance, and the craftsmanship behind our kitchen. This event is perfect for guests who want to discover a broader side of the CASÈ experience.",
+    "img": "assets/eventi/summer-tasting-menu.jpg",
+    "tag": "seasonal"
   }
 ]

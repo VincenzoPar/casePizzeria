@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Scopri il menu di CASÈ: pizze classiche, speciali e stagionali con ingredienti selezionati e abbinamenti consigliati."
+    />
+    <title>CASÈ — Menu</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              linen: "#F0EAE0",
+              ink: "#07090A",
+              spruce: "#29411E",
+              red: "#C4272A",
+              offwhite: "#FAFAF7",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "sans-serif"],
+              body: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body class="bg-linen text-ink">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html">
+            <img
+              src="./assets/logoNeroCase.svg"
+              alt="CASÈ logo"
+              width="90"
+              height="70"
+            />
+          </a>
+
+          <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li><a href="index.html" class="nav-link text-white/75 hover:text-white">Home</a></li>
+            <li><a href="chi-siamo.html" class="nav-link text-white/75 hover:text-white">Chi Siamo</a></li>
+            <li><a href="eventi.html" class="nav-link text-white/75 hover:text-white">Eventi</a></li>
+            <li><a href="contatti.html" class="nav-link text-white/75 hover:text-white">Contatti</a></li>
+          </ul>
+
+          <span></span>
+
+          <button
+            id="hamburger"
+            class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
+            aria-label="Apri menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden bg-spruce border-t border-white/10">
+        <ul class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0">
+          <li><a href="index.html" class="block text-white py-3 text-sm border-b border-white/10 no-underline">Home</a></li>
+          <li><a href="chi-siamo.html" class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors">Chi Siamo</a></li>
+          <li><a href="eventi.html" class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors">Eventi</a></li>
+          <li><a href="contatti.html" class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="pt-16">
+      <!-- HERO -->
+      <section class="bg-spruce text-white px-6 py-16 md:py-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
+          <div class="lg:col-span-8">
+            <p
+              class="text-white/45 text-xs tracking-[0.22em] uppercase font-semibold mb-4"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Menu
+            </p>
+            <h1
+              class="text-5xl md:text-7xl uppercase leading-none"
+              style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700"
+            >
+              Our pizzas
+            </h1>
+            <p class="text-white/70 text-sm md:text-base mt-5 max-w-2xl leading-relaxed">
+              Un menu pensato per essere letto con facilità: ingredienti essenziali,
+              prezzo chiaro e un secondo livello con foto, descrizione e abbinamenti.
+            </p>
+          </div>
+
+          <div class="lg:col-span-4">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7">
+              <p
+                class="text-white/40 text-xs tracking-[0.18em] uppercase font-semibold mb-4"
+                style="font-family: 'Barlow Condensed', sans-serif"
+              >
+                House notes
+              </p>
+              <div class="space-y-3 text-sm text-white/80">
+                <p>Impasto a lunga lievitazione.</p>
+                <p>Ingredienti selezionati e stagionali.</p>
+                <p>Abbinamenti consigliati per ogni pizza.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FILTERS -->
+      <section class="px-6 py-8 md:py-10 border-b border-black/10">
+        <div class="max-w-6xl mx-auto">
+          <div id="category-filters" class="flex flex-wrap gap-3">
+            <button
+              class="category-btn active-category inline-flex items-center rounded-full bg-spruce text-white px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold"
+              data-category="all"
+              type="button"
+            >
+              All
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU GRID -->
+      <section class="px-6 py-12 md:py-16">
+        <div class="max-w-6xl mx-auto">
+          <div
+            id="menu-container"
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6"
+          >
+            <div class="text-ink/50 text-sm">Loading menu...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div
+      id="pizza-modal"
+      class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/70 px-4"
+      aria-hidden="true"
+    >
+      <div class="bg-offwhite max-w-3xl w-full rounded-[28px] overflow-hidden shadow-2xl border border-black/10 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-black/10">
+          <h2
+            id="modal-title"
+            class="text-spruce uppercase leading-none"
+            style="font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700;"
+          >
+            Pizza
+          </h2>
+          <button
+            id="close-modal"
+            class="text-ink/60 hover:text-ink text-sm uppercase tracking-[0.16em] font-semibold"
+            type="button"
+          >
+            Close
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="bg-[#ddd5c8]">
+            <img
+              id="modal-image"
+              src=""
+              alt=""
+              class="w-full h-full object-cover aspect-[4/3] lg:aspect-auto"
+            />
+          </div>
+
+          <div class="p-6 md:p-7">
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span
+                id="modal-tag"
+                class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold"
+              >
+                Signature
+              </span>
+              <span
+                id="modal-price"
+                class="text-spruce text-2xl uppercase leading-none"
+                style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700;"
+              >
+                10€
+              </span>
+            </div>
+
+            <div class="mb-5">
+              <p class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold mb-2">
+                Ingredients
+              </p>
+              <p id="modal-ingredients" class="text-ink/75 text-sm leading-relaxed"></p>
+            </div>
+
+            <div class="mb-5">
+              <p class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold mb-2">
+                Description
+              </p>
+              <p id="modal-description" class="text-ink/75 text-sm leading-relaxed"></p>
+            </div>
+
+            <div class="pt-5 border-t border-black/10">
+              <p class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold mb-2">
+                Pairing suggestion
+              </p>
+              <p id="modal-pairing" class="text-ink/75 text-sm leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-spruce text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <img
+                src="./assets/logoCase.svg"
+                alt="CASÈ logo"
+                width="150"
+                height="100"
+              />
+            </div>
+            <p class="text-white/55 text-sm leading-relaxed max-w-xs">
+              Più di una pizzeria — un angolo accogliente dove rallentare e stare bene.
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Navigazione
+            </p>
+            <ul class="flex flex-col gap-2 list-none p-0 m-0">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="chi-siamo.html" class="footer-link">Chi Siamo</a></li>
+              <li><a href="eventi.html" class="footer-link">Eventi</a></li>
+              <li><a href="contatti.html" class="footer-link">Contatti</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: 'Barlow Condensed', sans-serif"
+            >
+              Dove Siamo
+            </p>
+            <div class="flex flex-col gap-2">
+              <span class="footer-link">Via Roma 12, Milano</span>
+              <a href="tel:+390212345678" class="footer-link">+39 02 1234 5678</a>
+              <a href="mailto:ciao@casepizzeria.it" class="footer-link">ciao@casepizzeria.it</a>
+              <span class="text-white/35 text-xs mt-1">Mar–Dom: 12:00–15:00 · 19:00–23:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3">
+          <p class="text-white/30 text-xs">© 2026 CASÈ Pizzeria. Tutti i diritti riservati.</p>
+          <p class="text-white/30 text-xs">P.IVA 12345678901</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var hamburger = document.getElementById("hamburger");
+      var mobileMenu = document.getElementById("mobile-menu");
+    
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+    
+      window.addEventListener("scroll", function () {
+        document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 20);
+      });
+    
+      var allMenuItems = [];
+      var activeCategory = "all";
+    
+      var menuContainer = document.getElementById("menu-container");
+      var categoryFilters = document.getElementById("category-filters");
+    
+      var modal = document.getElementById("pizza-modal");
+      var closeModal = document.getElementById("close-modal");
+      var modalTitle = document.getElementById("modal-title");
+      var modalImage = document.getElementById("modal-image");
+      var modalTag = document.getElementById("modal-tag");
+      var modalPrice = document.getElementById("modal-price");
+      var modalIngredients = document.getElementById("modal-ingredients");
+      var modalDescription = document.getElementById("modal-description");
+      var modalPairing = document.getElementById("modal-pairing");
+    
+      function slugify(value) {
+        return String(value || "")
+          .toLowerCase()
+          .trim()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/\s+/g, "-")
+          .replace(/[^\w-]+/g, "");
+      }
+    
+      function formatPrice(value) {
+        if (typeof value !== "number") return value || "";
+        return value.toFixed(2).replace(".", ",") + "€";
+      }
+    
+      function capitalize(value) {
+        if (!value) return "";
+        return value.charAt(0).toUpperCase() + value.slice(1);
+      }
+    
+      function normalizeMenuData(data) {
+        var items = [];
+    
+        (data.sezioni || []).forEach(function (section) {
+          if (Array.isArray(section.items)) {
+            section.items.forEach(function (item) {
+              items.push({
+                uid: section.id + "-" + item.id,
+                id: item.id,
+                sectionId: section.id,
+                sectionLabel: section.label,
+                subSectionLabel: "",
+                nome: item.nome,
+                descrizione: item.descrizione || "",
+                prezzo: item.prezzo,
+                formato: item.formato || "",
+                tagList: Array.isArray(item.tag) ? item.tag : [],
+                allergeni: Array.isArray(item.allergeni) ? item.allergeni : [],
+                notaSezione: section.nota || "",
+                categoria: section.label,
+                categoriaSlug: slugify(section.label)
+              });
+            });
+          }
+    
+          if (Array.isArray(section.sottosezioni)) {
+            section.sottosezioni.forEach(function (sub) {
+              (sub.items || []).forEach(function (item) {
+                items.push({
+                  uid: section.id + "-" + sub.id + "-" + item.id,
+                  id: item.id,
+                  sectionId: section.id,
+                  sectionLabel: section.label,
+                  subSectionLabel: sub.label,
+                  nome: item.nome,
+                  descrizione: item.descrizione || "",
+                  prezzo: item.prezzo,
+                  formato: item.formato || "",
+                  tagList: Array.isArray(item.tag) ? item.tag : [],
+                  allergeni: Array.isArray(item.allergeni) ? item.allergeni : [],
+                  notaSezione: "",
+                  categoria: sub.label,
+                  categoriaSlug: slugify(sub.label)
+                });
+              });
+            });
+          }
+        });
+    
+        return items;
+      }
+    
+      function openModal(item) {
+        modalTitle.textContent = item.nome || "Voce menu";
+        modalImage.src = "./assets/italianGesture.png";
+        modalImage.alt = item.nome || "Voce menu";
+        modalTag.textContent = item.subSectionLabel || item.sectionLabel || "CASÈ";
+        modalPrice.textContent = formatPrice(item.prezzo);
+    
+        var ingredientiText = [];
+        if (item.descrizione) ingredientiText.push(item.descrizione);
+        if (item.formato) ingredientiText.push("Formato: " + item.formato);
+        modalIngredients.textContent = ingredientiText.join(" • ") || "Dettagli disponibili in sala.";
+    
+        var descrizioneExtra = [];
+        if (item.tagList.length) descrizioneExtra.push("Tag: " + item.tagList.map(capitalize).join(", "));
+        if (item.allergeni.length) descrizioneExtra.push("Allergeni: " + item.allergeni.join(", "));
+        modalDescription.textContent = descrizioneExtra.join(" • ") || "For more detailed information, please ask the staff";
+    
+        modalPairing.textContent =
+          item.sectionLabel === "Dolci"
+            ? "Perfetto con espresso, amaro o un calice dolce."
+            : item.sectionLabel === "Bevande"
+            ? "Una selezione pensata per accompagnare il menu CASÈ."
+            : item.sectionLabel === "Le Pizze"
+            ? "Chiedi in sala il vino o la birra consigliata per questo impasto."
+            : "Abbinamento consigliato disponibile su richiesta in sala.";
+    
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        modal.setAttribute("aria-hidden", "false");
+      }
+    
+      function hideModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modal.setAttribute("aria-hidden", "true");
+      }
+    
+      closeModal.addEventListener("click", hideModal);
+    
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) hideModal();
+      });
+    
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") hideModal();
+      });
+    
+      function renderFilters(items) {
+        var categories = Array.from(
+          new Set(
+            items
+              .map(function (item) {
+                return item.categoria;
+              })
+              .filter(Boolean)
+          )
+        );
+    
+        categoryFilters.innerHTML =
+          '<button class="category-btn ' +
+          (activeCategory === "all"
+            ? "active-category bg-spruce text-white"
+            : "bg-offwhite text-ink border border-black/10") +
+          ' inline-flex items-center rounded-full px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold" data-category="all" type="button">All</button>' +
+          categories
+            .map(function (cat) {
+              var slug = slugify(cat);
+              var active = activeCategory === slug;
+              return (
+                '<button class="category-btn ' +
+                (active
+                  ? "active-category bg-spruce text-white"
+                  : "bg-offwhite text-ink border border-black/10") +
+                ' inline-flex items-center rounded-full px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold" data-category="' +
+                slug +
+                '" type="button">' +
+                cat +
+                "</button>"
+              );
+            })
+            .join("");
+    
+        document.querySelectorAll(".category-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            activeCategory = btn.dataset.category;
+            renderFilters(allMenuItems);
+            renderMenu(allMenuItems);
+          });
+        });
+      }
+    
+      function renderMenu(items) {
+        var filtered = items.filter(function (item) {
+          if (activeCategory === "all") return true;
+          return item.categoriaSlug === activeCategory;
+        });
+    
+        if (!filtered.length) {
+          menuContainer.innerHTML =
+            '<p class="text-ink/45 text-sm col-span-full">Nessun elemento disponibile in questa categoria.</p>';
+          return;
+        }
+    
+        menuContainer.innerHTML = filtered
+          .map(function (item) {
+            var metaLine = [];
+            if (item.subSectionLabel) metaLine.push(item.subSectionLabel);
+            if (item.formato) metaLine.push(item.formato);
+    
+            return (
+              '<article class="bg-offwhite border border-black/10 rounded-[24px] p-6 md:p-7 flex flex-col justify-between min-h-[280px]">' +
+                '<div>' +
+                  '<div class="flex items-start justify-between gap-4 mb-4">' +
+                    '<span class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">' +
+                      item.categoria +
+                    '</span>' +
+                    '<span class="text-spruce text-2xl uppercase leading-none shrink-0" style="font-family:Barlow Condensed,sans-serif;font-weight:700;">' +
+                      formatPrice(item.prezzo) +
+                    "</span>" +
+                  "</div>" +
+    
+                  '<h3 class="text-spruce uppercase leading-none mb-3" style="font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:700;">' +
+                    item.nome +
+                  "</h3>" +
+    
+                  (metaLine.length
+                    ? '<p class="text-ink/35 text-[11px] uppercase tracking-[0.16em] font-semibold mb-3">' +
+                        metaLine.join(" · ") +
+                      "</p>"
+                    : "") +
+    
+                  '<p class="text-ink/65 text-sm leading-relaxed mb-5">' +
+                    (item.descrizione || "For more detailed information, please ask the staff") +
+                  "</p>" +
+    
+                  (item.tagList.length
+                    ? '<div class="flex flex-wrap gap-2 mb-4">' +
+                        item.tagList
+                          .map(function (tag) {
+                            return '<span class="inline-flex items-center rounded-full bg-black/5 px-2.5 py-1 text-[11px] text-ink/55 uppercase tracking-[0.12em] font-semibold">' + tag + "</span>";
+                          })
+                          .join("") +
+                      "</div>"
+                    : "") +
+                "</div>" +
+    
+                '<div class="pt-4 border-t border-black/10 flex items-center justify-between gap-4">' +
+                  '<span class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold">' +
+                    (item.allergeni.length ? "Allergeni: " + item.allergeni.join(", ") : "CASÈ Selection") +
+                  '</span>' +
+                  '<button type="button" class="js-more text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70 transition-opacity" data-id="' +
+                    item.uid +
+                  '">' +
+                    "More →" +
+                  "</button>" +
+                "</div>" +
+              "</article>"
+            );
+          })
+          .join("");
+    
+        document.querySelectorAll(".js-more").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.dataset.id;
+            var item = allMenuItems.find(function (entry) {
+              return entry.uid === id;
+            });
+            if (item) openModal(item);
+          });
+        });
+      }
+    
+      fetch("./menu.json")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (data) {
+          allMenuItems = normalizeMenuData(data);
+          renderFilters(allMenuItems);
+          renderMenu(allMenuItems);
+        })
+        .catch(function () {
+          menuContainer.innerHTML =
+            '<p class="text-ink/45 text-sm col-span-full">Il menu non è disponibile al momento.</p>';
+        });
+    </script>
+  </body>
+</html>

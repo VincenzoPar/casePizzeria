@@ -1,0 +1,445 @@
+{
+  "ristorante": "CASÈ Pizzeria",
+  "version": "2026",
+  "sezioni": [
+    {
+      "id": "antipasti",
+      "label": "Starters",
+      "labelEn": "Starters",
+      "items": [
+        {
+          "id": "a1",
+          "nome": "Tomato Bruschetta",
+          "descrizione": "Wood-fired toasted durum wheat bread, datterino tomatoes, garlic, basil, extra virgin olive oil",
+          "prezzo": 6.50,
+          "tag": ["vegetarian"],
+          "allergeni": ["gluten"]
+        },
+        {
+          "id": "a2",
+          "nome": "Burrata & Cured Ham",
+          "descrizione": "Apulian burrata, 18-month cured ham, semi-dried cherry tomatoes, basil oil",
+          "prezzo": 13.00,
+          "tag": ["signature"],
+          "allergeni": ["milk"]
+        },
+        {
+          "id": "a3",
+          "nome": "Potato Croquettes",
+          "descrizione": "Potato croquettes filled with fior di latte and black pepper, served with tomato sauce",
+          "prezzo": 7.50,
+          "tag": ["vegetarian"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        },
+        {
+          "id": "a4",
+          "nome": "Casè Mixed Fried Selection",
+          "descrizione": "Mini montanarine, croquettes, pasta fritters, battered zucchini — lightly fried in seed oil",
+          "prezzo": 12.00,
+          "tag": ["to share"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        },
+        {
+          "id": "a5",
+          "nome": "Meatballs in Tomato Sauce",
+          "descrizione": "Oven-baked beef and pork meatballs, San Marzano DOP tomato sauce, basil",
+          "prezzo": 9.00,
+          "tag": [],
+          "allergeni": ["gluten", "eggs", "milk"]
+        },
+        {
+          "id": "a6",
+          "nome": "Casè Sharing Board",
+          "descrizione": "Mixed cured meats (cured ham, Neapolitan salami, mortadella), cheeses, pickled vegetables and toasted bread",
+          "prezzo": 18.00,
+          "tag": ["to share"],
+          "allergeni": ["gluten", "milk"]
+        }
+      ]
+    },
+    {
+      "id": "pizze",
+      "label": "Pizzas",
+      "labelEn": "Pizzas",
+      "nota": "48-hour direct dough, wood-fired oven at 450°C. Also available with wholemeal dough (+€1.50).",
+      "items": [
+        {
+          "id": "p1",
+          "nome": "Margherita",
+          "descrizione": "San Marzano DOP tomato, fior di latte, basil, extra virgin olive oil",
+          "prezzo": 9.50,
+          "tag": ["classic", "vegetarian"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p2",
+          "nome": "Marinara",
+          "descrizione": "San Marzano DOP tomato, garlic, oregano, extra virgin olive oil — dairy-free",
+          "prezzo": 8.00,
+          "tag": ["vegan", "classic"],
+          "allergeni": ["gluten"]
+        },
+        {
+          "id": "p3",
+          "nome": "Diavola",
+          "descrizione": "San Marzano tomato, fior di latte, spicy Calabrian salami, chili oil",
+          "prezzo": 11.50,
+          "tag": ["spicy"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p4",
+          "nome": "Four Cheeses",
+          "descrizione": "Fior di latte, gorgonzola DOP, 24-month Parmigiano Reggiano, smoked provola, acacia honey",
+          "prezzo": 13.00,
+          "tag": ["vegetarian"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p5",
+          "nome": "Casè Special",
+          "descrizione": "Fior di latte, premium cooked ham, porcini mushrooms, truffle oil, Parmigiano Reggiano",
+          "prezzo": 15.00,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p6",
+          "nome": "'Nduja & Burrata",
+          "descrizione": "Datterino tomato, Calabrian 'nduja, Apulian burrata, fresh basil",
+          "prezzo": 14.50,
+          "tag": ["signature", "spicy"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p7",
+          "nome": "Sausage and Friarielli",
+          "descrizione": "Fior di latte, pork sausage, friarielli sautéed with garlic and olive oil",
+          "prezzo": 13.50,
+          "tag": ["traditional"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p8",
+          "nome": "Vegetable Garden",
+          "descrizione": "Tomato, fior di latte, seasonal grilled vegetables (aubergines, courgettes, peppers), Taggiasca olives",
+          "prezzo": 12.00,
+          "tag": ["vegetarian", "seasonal"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p9",
+          "nome": "Tuna and Onion",
+          "descrizione": "San Marzano tomato, fior di latte, tuna in extra virgin olive oil, caramelised red onion",
+          "prezzo": 12.50,
+          "tag": [],
+          "allergeni": ["gluten", "milk", "fish"]
+        },
+        {
+          "id": "p10",
+          "nome": "Cruda",
+          "descrizione": "Baked with fior di latte, then topped after baking with San Daniele DOP cured ham, rocket and shaved Grana",
+          "prezzo": 14.00,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p11",
+          "nome": "White Pizza with Lardo",
+          "descrizione": "White base (lard), fior di latte, Colonnata IGP lardo, rosemary, chestnut honey",
+          "prezzo": 13.00,
+          "tag": [],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "p12",
+          "nome": "Fried Montanara",
+          "descrizione": "Fried pizza finished in the oven: ricotta, pork cracklings, fresh cherry tomato — traditional recipe",
+          "prezzo": 13.00,
+          "tag": ["traditional"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        }
+      ]
+    },
+    {
+      "id": "insalate",
+      "label": "Salads & Sides",
+      "labelEn": "Salads & Sides",
+      "items": [
+        {
+          "id": "i1",
+          "nome": "Mixed Salad",
+          "descrizione": "Mixed leaves, cherry tomatoes, carrots, fennel, balsamic vinegar",
+          "prezzo": 5.50,
+          "tag": ["vegan"],
+          "allergeni": []
+        },
+        {
+          "id": "i2",
+          "nome": "Casè Salad",
+          "descrizione": "Rocket, stracciatella, semi-dried tomatoes, walnuts, pomegranate glaze",
+          "prezzo": 8.50,
+          "tag": ["vegetarian"],
+          "allergeni": ["milk", "nuts"]
+        },
+        {
+          "id": "i3",
+          "nome": "Roasted Potatoes",
+          "descrizione": "Wood-fired baby potatoes with rosemary and coarse salt",
+          "prezzo": 5.00,
+          "tag": ["vegan"],
+          "allergeni": []
+        },
+        {
+          "id": "i4",
+          "nome": "Grilled Vegetables",
+          "descrizione": "Grilled aubergines, courgettes and peppers, extra virgin olive oil and mint",
+          "prezzo": 6.50,
+          "tag": ["vegan"],
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "dolci",
+      "label": "Desserts",
+      "labelEn": "Desserts",
+      "items": [
+        {
+          "id": "d1",
+          "nome": "House Tiramisù",
+          "descrizione": "Traditional recipe: ladyfingers, mascarpone, espresso coffee, cocoa powder",
+          "prezzo": 6.50,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        },
+        {
+          "id": "d2",
+          "nome": "Salted Caramel Panna Cotta",
+          "descrizione": "Vanilla panna cotta, salted caramel sauce, chopped hazelnuts",
+          "prezzo": 6.00,
+          "tag": ["vegetarian"],
+          "allergeni": ["milk", "nuts"]
+        },
+        {
+          "id": "d3",
+          "nome": "Sicilian Cannolo",
+          "descrizione": "Crispy fried shell, sheep’s milk ricotta, chocolate chips, Bronte DOP pistachio",
+          "prezzo": 5.50,
+          "tag": ["traditional"],
+          "allergeni": ["gluten", "milk", "nuts"]
+        },
+        {
+          "id": "d4",
+          "nome": "Artisanal Gelato",
+          "descrizione": "Two flavours of your choice: custard, dark chocolate, pistachio, stracciatella, lemon",
+          "prezzo": 5.00,
+          "tag": ["vegetarian"],
+          "allergeni": ["milk", "eggs"]
+        },
+        {
+          "id": "d5",
+          "nome": "Sfogliatella Riccia",
+          "descrizione": "Crispy puff pastry, ricotta filling, semolina, candied fruit and cinnamon — Neapolitan recipe",
+          "prezzo": 4.50,
+          "tag": ["traditional"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        },
+        {
+          "id": "d6",
+          "nome": "Chocolate Lava Cake",
+          "descrizione": "Warm dark chocolate cake with a soft centre, served with vanilla gelato",
+          "prezzo": 7.00,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk", "eggs"]
+        }
+      ]
+    },
+    {
+      "id": "bevande",
+      "label": "Drinks",
+      "labelEn": "Drinks",
+      "sottosezioni": [
+        {
+          "id": "vini",
+          "label": "Wines",
+          "items": [
+            {
+              "id": "v1",
+              "nome": "Chianti Classico DOCG",
+              "descrizione": "100% Sangiovese — Tuscany. Fruity with spicy notes and elegant tannins.",
+              "formato": "75cl",
+              "prezzo": 22.00,
+              "tag": ["red"]
+            },
+            {
+              "id": "v2",
+              "nome": "Primitivo di Manduria DOP",
+              "descrizione": "Apulia. Full-bodied, ripe red fruit, smooth and persistent.",
+              "formato": "75cl",
+              "prezzo": 24.00,
+              "tag": ["red"]
+            },
+            {
+              "id": "v3",
+              "nome": "Falanghina dei Campi Flegrei DOC",
+              "descrizione": "Campania. Fresh, floral, with peach and citrus notes — perfect with white pizzas.",
+              "formato": "75cl",
+              "prezzo": 20.00,
+              "tag": ["white"]
+            },
+            {
+              "id": "v4",
+              "nome": "Vermentino di Sardegna DOC",
+              "descrizione": "Sardinia. Savoury and mineral with lively acidity.",
+              "formato": "75cl",
+              "prezzo": 19.00,
+              "tag": ["white"]
+            },
+            {
+              "id": "v5",
+              "nome": "Prosecco Superiore DOCG",
+              "descrizione": "Conegliano-Valdobbiadene. Fine bubbles, white fruit, clean finish.",
+              "formato": "75cl",
+              "prezzo": 21.00,
+              "tag": ["sparkling"]
+            },
+            {
+              "id": "v6",
+              "nome": "House Wine",
+              "descrizione": "Red or white house wine, seasonal selection",
+              "formato": "50cl carafe",
+              "prezzo": 9.00,
+              "tag": ["glass / carafe"]
+            }
+          ]
+        },
+        {
+          "id": "birre",
+          "label": "Beers",
+          "items": [
+            {
+              "id": "b1",
+              "nome": "Peroni Nastro Azzurro",
+              "descrizione": "Italian lager — light and refreshing",
+              "formato": "33cl",
+              "prezzo": 4.00,
+              "tag": ["lager"]
+            },
+            {
+              "id": "b2",
+              "nome": "Casè Craft IPA",
+              "descrizione": "Exclusive IPA for CASÈ — hoppy, with citrus and tropical fruit notes",
+              "formato": "33cl",
+              "prezzo": 6.50,
+              "tag": ["craft", "signature"]
+            },
+            {
+              "id": "b3",
+              "nome": "Casè Craft Amber Ale",
+              "descrizione": "Malty amber ale, with caramel and biscuit notes — perfect with red pizzas",
+              "formato": "33cl",
+              "prezzo": 6.50,
+              "tag": ["craft", "signature"]
+            },
+            {
+              "id": "b4",
+              "nome": "Moretti Gluten-Free",
+              "descrizione": "Gluten-free lager",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["gluten-free"]
+            }
+          ]
+        },
+        {
+          "id": "cocktails",
+          "label": "Cocktails & Aperitifs",
+          "items": [
+            {
+              "id": "c1",
+              "nome": "Aperol Spritz",
+              "descrizione": "Aperol, Prosecco, soda, orange",
+              "prezzo": 8.00,
+              "tag": []
+            },
+            {
+              "id": "c2",
+              "nome": "Negroni",
+              "descrizione": "Gin, Campari, red vermouth, orange peel",
+              "prezzo": 9.00,
+              "tag": []
+            },
+            {
+              "id": "c3",
+              "nome": "Limoncello Spritz",
+              "descrizione": "Sorrento limoncello, Prosecco, tonic water, mint",
+              "prezzo": 8.00,
+              "tag": []
+            },
+            {
+              "id": "c4",
+              "nome": "Rossini",
+              "descrizione": "Prosecco, fresh strawberries — delicate and fruity cocktail",
+              "prezzo": 7.50,
+              "tag": []
+            }
+          ]
+        },
+        {
+          "id": "analcoliche",
+          "label": "Soft Drinks & Coffee",
+          "items": [
+            {
+              "id": "an1",
+              "nome": "Still / Sparkling Water",
+              "prezzo": 2.50,
+              "formato": "75cl",
+              "tag": []
+            },
+            {
+              "id": "an2",
+              "nome": "Soft Drinks",
+              "descrizione": "Coca-Cola, Fanta, Sprite, San Bitter, Chinotto",
+              "prezzo": 3.50,
+              "formato": "33cl",
+              "tag": []
+            },
+            {
+              "id": "an3",
+              "nome": "Fruit Juice",
+              "descrizione": "Peach, apricot, apple, pomegranate — organic",
+              "prezzo": 3.50,
+              "tag": []
+            },
+            {
+              "id": "an4",
+              "nome": "Espresso",
+              "prezzo": 1.50,
+              "tag": []
+            },
+            {
+              "id": "an5",
+              "nome": "Americano",
+              "prezzo": 2.50,
+              "tag": []
+            },
+            {
+              "id": "an6",
+              "nome": "Cappuccino",
+              "prezzo": 2.50,
+              "tag": []
+            },
+            {
+              "id": "an7",
+              "nome": "Digestifs",
+              "descrizione": "Limoncello, Amaro del Capo, grappa, mirto — artisanal selection",
+              "prezzo": 4.00,
+              "tag": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
