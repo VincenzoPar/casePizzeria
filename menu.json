@@ -17,22 +17,6 @@
         },
         {
           "id": "a2",
-          "nome": "Burrata & Cured Ham",
-          "descrizione": "Apulian burrata, 18-month cured ham, semi-dried cherry tomatoes, basil oil",
-          "prezzo": 13.00,
-          "tag": ["signature"],
-          "allergeni": ["milk"]
-        },
-        {
-          "id": "a3",
-          "nome": "Potato Croquettes",
-          "descrizione": "Potato croquettes filled with fior di latte and black pepper, served with tomato sauce",
-          "prezzo": 7.50,
-          "tag": ["vegetarian"],
-          "allergeni": ["gluten", "milk", "eggs"]
-        },
-        {
-          "id": "a4",
           "nome": "Casè Mixed Fried Selection",
           "descrizione": "Mini montanarine, croquettes, pasta fritters, battered zucchini — lightly fried in seed oil",
           "prezzo": 12.00,
@@ -40,7 +24,7 @@
           "allergeni": ["gluten", "milk", "eggs"]
         },
         {
-          "id": "a5",
+          "id": "a3",
           "nome": "Meatballs in Tomato Sauce",
           "descrizione": "Oven-baked beef and pork meatballs, San Marzano DOP tomato sauce, basil",
           "prezzo": 9.00,
@@ -48,7 +32,7 @@
           "allergeni": ["gluten", "eggs", "milk"]
         },
         {
-          "id": "a6",
+          "id": "a4",
           "nome": "Casè Sharing Board",
           "descrizione": "Mixed cured meats (cured ham, Neapolitan salami, mortadella), cheeses, pickled vegetables and toasted bread",
           "prezzo": 18.00,
@@ -58,200 +42,128 @@
       ]
     },
     {
-      "id": "pizze",
-      "label": "Pizzas",
-      "labelEn": "Pizzas",
-      "nota": "48-hour direct dough, wood-fired oven at 450°C. Also available with wholemeal dough (+€1.50).",
+      "id": "classiche",
+      "label": "Casè's Classics",
+      "labelEn": "Casè's Classics",
       "items": [
         {
           "id": "p1",
           "nome": "Margherita",
-          "descrizione": "San Marzano DOP tomato, fior di latte, basil, extra virgin olive oil",
-          "prezzo": 9.50,
+          "immagine": "./assets/eventi/pizza-napoletana.jpg",
+          "descrizione": "San Marzano DOP tomato, fior di latte, Grana Padano 24 mesi, basil.",
+          "prezzo": 10.80,
           "tag": ["classic", "vegetarian"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p2",
-          "nome": "Marinara",
-          "descrizione": "San Marzano DOP tomato, garlic, oregano, extra virgin olive oil — dairy-free",
-          "prezzo": 8.00,
+          "nome": "Marinara Classica",
+          "descrizione": "San Marzano DOP tomato, garlic, oregano, basil.",
+          "prezzo": 9.50,
           "tag": ["vegan", "classic"],
           "allergeni": ["gluten"]
         },
         {
           "id": "p3",
           "nome": "Diavola",
-          "descrizione": "San Marzano tomato, fior di latte, spicy Calabrian salami, chili oil",
-          "prezzo": 11.50,
-          "tag": ["spicy"],
+          "descrizione": "San Marzano DOP tomato, fior di latte, spicy salami, Pecorino Romano DOP, basil.",
+          "prezzo": 13.80,
+          "tag": ["spicy", "classic"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p4",
-          "nome": "Four Cheeses",
-          "descrizione": "Fior di latte, gorgonzola DOP, 24-month Parmigiano Reggiano, smoked provola, acacia honey",
-          "prezzo": 13.00,
-          "tag": ["vegetarian"],
+          "nome": "Bufalina Casè",
+          "descrizione": "Slow-cooked San Marzano DOP tomato, mozzarella di bufala campana, Pecorino Romano DOP, homemade basil pesto.",
+          "prezzo": 14.50,
+          "tag": ["vegetarian", "classic"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p5",
-          "nome": "Casè Special",
-          "descrizione": "Fior di latte, premium cooked ham, porcini mushrooms, truffle oil, Parmigiano Reggiano",
-          "prezzo": 15.00,
-          "tag": ["signature"],
-          "allergeni": ["gluten", "milk"]
+          "nome": "Prosciutto Cotto",
+          "descrizione": "San Marzano DOP tomato, artisanal cooked ham, Grana Padano 24 mesi, basil.",
+          "prezzo": 13.50,
+          "tag": ["classic"],
+          "allergeni": ["gluten"]
         },
         {
           "id": "p6",
-          "nome": "'Nduja & Burrata",
-          "descrizione": "Datterino tomato, Calabrian 'nduja, Apulian burrata, fresh basil",
+          "nome": "Provola and Pepper, Casè-Style",
+          "descrizione": "Slow-cooked San Marzano DOP tomato, mozzarella di bufala campana, smoked provola, freshly ground black pepper, basil.",
           "prezzo": 14.50,
-          "tag": ["signature", "spicy"],
+          "tag": ["classic", "spicy"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p7",
-          "nome": "Sausage and Friarielli",
-          "descrizione": "Fior di latte, pork sausage, friarielli sautéed with garlic and olive oil",
+          "nome": "Vanvitelliana",
+          "descrizione": "Yellow cherry tomato DOP, fior di latte, Pecorino Romano DOP. After baking: Caserta black pig sausage, Slow Food Presidium Caiazzano olive powder, basil. A tribute to the gardens, colors, and elegance of the Royal Palace of Caserta.",
           "prezzo": 13.50,
-          "tag": ["traditional"],
+          "tag": ["classic"],
           "allergeni": ["gluten", "milk"]
-        },
-        {
-          "id": "p8",
-          "nome": "Vegetable Garden",
-          "descrizione": "Tomato, fior di latte, seasonal grilled vegetables (aubergines, courgettes, peppers), Taggiasca olives",
-          "prezzo": 12.00,
-          "tag": ["vegetarian", "seasonal"],
-          "allergeni": ["gluten", "milk"]
-        },
-        {
-          "id": "p9",
-          "nome": "Tuna and Onion",
-          "descrizione": "San Marzano tomato, fior di latte, tuna in extra virgin olive oil, caramelised red onion",
-          "prezzo": 12.50,
-          "tag": [],
-          "allergeni": ["gluten", "milk", "fish"]
-        },
-        {
-          "id": "p10",
-          "nome": "Cruda",
-          "descrizione": "Baked with fior di latte, then topped after baking with San Daniele DOP cured ham, rocket and shaved Grana",
-          "prezzo": 14.00,
-          "tag": ["signature"],
-          "allergeni": ["gluten", "milk"]
-        },
-        {
-          "id": "p11",
-          "nome": "White Pizza with Lardo",
-          "descrizione": "White base (lard), fior di latte, Colonnata IGP lardo, rosemary, chestnut honey",
-          "prezzo": 13.00,
-          "tag": [],
-          "allergeni": ["gluten", "milk"]
-        },
-        {
-          "id": "p12",
-          "nome": "Fried Montanara",
-          "descrizione": "Fried pizza finished in the oven: ricotta, pork cracklings, fresh cherry tomato — traditional recipe",
-          "prezzo": 13.00,
-          "tag": ["traditional"],
-          "allergeni": ["gluten", "milk", "eggs"]
         }
       ]
     },
     {
-      "id": "insalate",
-      "label": "Salads & Sides",
-      "labelEn": "Salads & Sides",
+      "id": "signature",
+      "label": "Casè's signatures",
+      "labelEn": "Casè's signatures",
       "items": [
         {
           "id": "i1",
-          "nome": "Mixed Salad",
-          "descrizione": "Mixed leaves, cherry tomatoes, carrots, fennel, balsamic vinegar",
-          "prezzo": 5.50,
-          "tag": ["vegan"],
-          "allergeni": []
+          "nome": "Capricciosa CASÈ",
+          "descrizione": "Artichoke cream, fior di latte, artisanal cooked ham, porcini mushrooms, mild salami, artichokes in two textures, and Slow Food Presidium Caiazzane olive powder.",
+          "prezzo": 15.50,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk"]
         },
         {
           "id": "i2",
-          "nome": "Casè Salad",
-          "descrizione": "Rocket, stracciatella, semi-dried tomatoes, walnuts, pomegranate glaze",
-          "prezzo": 8.50,
-          "tag": ["vegetarian"],
-          "allergeni": ["milk", "nuts"]
+          "nome": "Marinara CASÈ",
+          "descrizione": "Yellow cherry tomato DOP, fresh garlic, capers from Salina. After baking: Apulian stracciatella cheese, anchovy fillets, confit cherry tomatoes, oregano from the Matese Mountains, and black garlic mayonnaise.",
+          "prezzo": 17.50,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk", "fish", "eggs"]
         },
         {
           "id": "i3",
-          "nome": "Roasted Potatoes",
-          "descrizione": "Wood-fired baby potatoes with rosemary and coarse salt",
-          "prezzo": 5.00,
-          "tag": ["vegan"],
-          "allergeni": []
-        },
-        {
-          "id": "i4",
-          "nome": "Grilled Vegetables",
-          "descrizione": "Grilled aubergines, courgettes and peppers, extra virgin olive oil and mint",
-          "prezzo": 6.50,
-          "tag": ["vegan"],
-          "allergeni": []
+          "nome": "CASÈ Brutal",
+          "descrizione": "Potato cream, smoked provola, baked potatoes, aged Pecorino Romano, italian sausage. After baking: homemade mayonnaise, oregano from the Matese Mountains. You can add porchetta for an extra €2.00.",
+          "prezzo": 14.50,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk", "eggs"]
         }
       ]
     },
     {
-      "id": "dolci",
-      "label": "Desserts",
-      "labelEn": "Desserts",
+      "id": "speciali",
+      "label": "Territorial Specialities",
+      "labelEn": "Territorial Specialities",
       "items": [
         {
           "id": "d1",
-          "nome": "House Tiramisù",
-          "descrizione": "Traditional recipe: ladyfingers, mascarpone, espresso coffee, cocoa powder",
-          "prezzo": 6.50,
-          "tag": ["signature"],
-          "allergeni": ["gluten", "milk", "eggs"]
+          "nome": "Tonno e Monti",
+          "descrizione": "Fior di latte, tuna fillets, Alife onions. After baking: red and yellow cherry tomato confit, Slow Food Presidium Caiazzano olive powder, crusco peppers.",
+          "prezzo": 16.50,
+          "tag": ["speciality"],
+          "allergeni": ["gluten", "milk", "fish"]
         },
         {
           "id": "d2",
-          "nome": "Salted Caramel Panna Cotta",
-          "descrizione": "Vanilla panna cotta, salted caramel sauce, chopped hazelnuts",
-          "prezzo": 6.00,
-          "tag": ["vegetarian"],
-          "allergeni": ["milk", "nuts"]
+          "nome": "Cinque Formaggi CASÈ",
+          "descrizione": "24-month aged Parmigiano-Reggiano cream, fior di latte, smoked provola, gorgonzola, caciocavallo. After baking: carrot cream with honey, basil. (A tribute to a dear childhood friend)",
+          "prezzo": 17.50,
+          "tag": ["vegetarian, speciality"],
+          "allergeni": ["gluten", "milk"]
         },
         {
           "id": "d3",
-          "nome": "Sicilian Cannolo",
-          "descrizione": "Crispy fried shell, sheep’s milk ricotta, chocolate chips, Bronte DOP pistachio",
+          "nome": "La Reggia di CASÈ",
+          "descrizione": "24-month aged Parmigiano-Reggiano cream, fior di latte, smoked provola. After baking: aged prosciutto, arugula pesto, confit cherry tomatoes, shavings of Caciocavallo cheese, Slow Food Presidium Caiazzane olive powder.",
           "prezzo": 5.50,
-          "tag": ["traditional"],
-          "allergeni": ["gluten", "milk", "nuts"]
-        },
-        {
-          "id": "d4",
-          "nome": "Artisanal Gelato",
-          "descrizione": "Two flavours of your choice: custard, dark chocolate, pistachio, stracciatella, lemon",
-          "prezzo": 5.00,
-          "tag": ["vegetarian"],
-          "allergeni": ["milk", "eggs"]
-        },
-        {
-          "id": "d5",
-          "nome": "Sfogliatella Riccia",
-          "descrizione": "Crispy puff pastry, ricotta filling, semolina, candied fruit and cinnamon — Neapolitan recipe",
-          "prezzo": 4.50,
-          "tag": ["traditional"],
-          "allergeni": ["gluten", "milk", "eggs"]
-        },
-        {
-          "id": "d6",
-          "nome": "Chocolate Lava Cake",
-          "descrizione": "Warm dark chocolate cake with a soft centre, served with vanilla gelato",
-          "prezzo": 7.00,
-          "tag": ["signature"],
-          "allergeni": ["gluten", "milk", "eggs"]
+          "tag": ["speciality"],
+          "allergeni": ["gluten", "milk"]
         }
       ]
     },
@@ -438,6 +350,128 @@
               "tag": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "label": "Extras",
+      "labelEn": "Extras",
+      "items": [
+        {
+          "id": "e1",
+          "nome": "Mais",
+          "prezzo": 0.50
+        },
+        {
+          "id": "e2",
+          "nome": "Fresh Mushrooms",
+          "prezzo": 1.30
+        },
+        {
+          "id": "e3",
+          "nome": "Garlic",
+          "prezzo": 0.50
+        },
+        {
+          "id": "e4",
+          "nome": "Chilly",
+          "prezzo": 0.50
+        },
+        {
+          "id": "e5",
+          "nome": "Potatoes",
+          "prezzo": 1.20
+        },
+        {
+          "id": "e6",
+          "nome": "Black Olives",
+          "prezzo": 2.20
+        },
+        {
+          "id": "e7",
+          "nome": "Artichokes",
+          "prezzo": 2.00
+        },
+        {
+          "id": "e8",
+          "nome": "Onions",
+          "prezzo": 1.00
+        },
+        {
+          "id": "e9",
+          "nome": "Capers",
+          "prezzo": 1.00
+        },
+        {
+          "id": "e10",
+          "nome": "Red and yellow cherry tomatoes",
+          "prezzo": 2.50
+        },
+        {
+          "id": "e11",
+          "nome": "Grana Padano",
+          "prezzo": 1.50
+        },
+        {
+          "id": "e12",
+          "nome": "Pecorino",
+          "prezzo": 1.50
+        },
+        {
+          "id": "e13",
+          "nome": "Gorgonzola",
+          "prezzo": 1.50
+        },
+        {
+          "id": "e14",
+          "nome": "Mozzarella di Bufala",
+          "prezzo": 3.00
+        },
+        {
+          "id": "e15",
+          "nome": "Mozzarella",
+          "prezzo": 2.00
+        },
+        {
+          "id": "e16",
+          "nome": "Provola",
+          "prezzo": 2.20
+        },
+        {
+          "id": "e17",
+          "nome": "Cooked Ham",
+          "prezzo": 2.50
+        },
+        {
+          "id": "e18",
+          "nome": "Mild Salami",
+          "prezzo": 2.30
+        },
+        {
+          "id": "e19",
+          "nome": "Spicy Salami",
+          "prezzo": 2.20
+        },
+        {
+          "id": "e20",
+          "nome": "Tuna",
+          "prezzo": 3.20
+        },
+        {
+          "id": "e21",
+          "nome": "Anchovies",
+          "prezzo": 3.50
+        },
+        {
+          "id": "e22",
+          "nome": "Sausage",
+          "prezzo": 2.60
+        },
+        {
+          "id": "e23",
+          "nome": "Ham",
+          "prezzo": 2.50
         }
       ]
     }

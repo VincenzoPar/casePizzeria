@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -147,14 +147,14 @@
           <div class="lg:col-span-8">
             <p
               class="text-white/45 text-xs tracking-[0.22em] uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Menu
             </p>
             <h1
               class="text-5xl md:text-7xl uppercase leading-none"
               style="
-                font-family: 'Barlow Condensed', sans-serif;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
                 font-weight: 700;
               "
             >
@@ -163,11 +163,27 @@
             <p
               class="text-white/70 text-sm md:text-base mt-5 max-w-2xl leading-relaxed"
             >
-              A menu designed for easy reading: key ingredients, clear pricing,
-              and a second section featuring photos, descriptions, and pairing
-              suggestions.
+              CASÈ was born from the fusion of contemporary pizza-making
+              traditions and the finest ingredients from the Caserta region. It
+              is a constant quest for carefully selected ingredients, artisanal
+              craftsmanship, and authentic flavors.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-16 md:py-20">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end"
+        >
+          <div class="lg:col-span-10">
+            <h1 class="text-lg">
+              All our pizzas are finished with extra virgin olive oil from
+              Azienda Sangiovanni, a small farm in the province of Caserta
+              (Caiazzo).
+            </h1>
+          </div>
+        </div>
       </section>
 
       <!-- FILTERS -->
@@ -182,6 +198,23 @@
               All
             </button>
           </div>
+        </div>
+      </section>
+
+      <!-- EXTRAS HEADING -->
+      <section id="extras-heading" class="hidden px-6 pt-10 md:pt-12 pb-0">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            id="extras-heading-text"
+            class="text-spruce uppercase leading-none"
+            style="
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-size: 2.5rem;
+              font-weight: 700;
+            "
+          >
+            Customize your pizza with our extras
+          </h2>
         </div>
       </section>
 
@@ -214,7 +247,7 @@
             id="modal-title"
             class="text-spruce uppercase leading-none"
             style="
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-size: 2rem;
               font-weight: 700;
             "
@@ -252,7 +285,7 @@
                 id="modal-price"
                 class="text-spruce text-2xl uppercase leading-none"
                 style="
-                  font-family: 'Barlow Condensed', sans-serif;
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
                   font-weight: 700;
                 "
               >
@@ -314,14 +347,15 @@
               />
             </div>
             <p class="text-white/55 text-sm leading-relaxed max-w-xs">
-              More than just a pizzeria—a cozy spot where you can slow down and relax.
+              More than just a pizzeria—a cozy spot where you can slow down and
+              relax.
             </p>
           </div>
 
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Navigation
             </p>
@@ -338,7 +372,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Where we are
             </p>
@@ -397,6 +431,8 @@
 
       var menuContainer = document.getElementById("menu-container");
       var categoryFilters = document.getElementById("category-filters");
+      var extrasHeading = document.getElementById("extras-heading");
+      var extrasHeadingText = document.getElementById("extras-heading-text");
 
       var modal = document.getElementById("pizza-modal");
       var closeModal = document.getElementById("close-modal");
@@ -441,6 +477,7 @@
                 sectionLabel: section.label,
                 subSectionLabel: "",
                 nome: item.nome,
+                immagine: item.immagine || undefined,
                 descrizione: item.descrizione || "",
                 prezzo: item.prezzo,
                 formato: item.formato || "",
@@ -484,7 +521,7 @@
 
       function openModal(item) {
         modalTitle.textContent = item.nome || "Menu voice";
-        modalImage.src = "./assets/italianGesture.png";
+        modalImage.src = item.immagine || "./assets/italianGesture.png";
         modalImage.alt = item.nome || "Menu voice image";
         modalTag.textContent =
           item.subSectionLabel || item.sectionLabel || "CASÈ";
@@ -494,15 +531,18 @@
         if (item.descrizione) ingredientiText.push(item.descrizione);
         if (item.formato) ingredientiText.push("Size: " + item.formato);
         modalIngredients.textContent =
-          ingredientiText.join(" • ") || "Ask the waitstaff for the ingredients.";
+          ingredientiText.join(" • ") ||
+          "Ask the waitstaff for the ingredients.";
 
         var descrizioneExtra = [];
-        if (item.tagList.length)
+        if (item.tagList.length) {
           descrizioneExtra.push(
-            "Tag: " + item.tagList.map(capitalize).join(", ")
+            "Tag: " + item.tagList.map(capitalize).join(", "),
           );
-        if (item.allergeni.length)
+        }
+        if (item.allergeni.length) {
           descrizioneExtra.push("Allergens: " + item.allergeni.join(", "));
+        }
         modalDescription.textContent =
           descrizioneExtra.join(" • ") ||
           "For more detailed information, please ask the staff";
@@ -511,10 +551,10 @@
           item.sectionLabel === "Desserts"
             ? "Perfect with an espresso, a digestif, or a glass of sweet wine."
             : item.sectionLabel === "Drinks"
-            ? "A selection designed to complement the CASÈ menu."
-            : item.sectionLabel === "Le Pizze"
-            ? "Ask the server for the wine or beer they recommend with this dish."
-            : "Recommended pairings are available upon request in the dining room.";
+              ? "A selection designed to complement the CASÈ menu."
+              : item.sectionLabel === "Le Pizze"
+                ? "Ask the server for the wine or beer they recommend with this dish."
+                : "Recommended pairings are available upon request in the dining room.";
 
         modal.classList.remove("hidden");
         modal.classList.add("flex");
@@ -537,6 +577,18 @@
         if (e.key === "Escape") hideModal();
       });
 
+      function updateExtrasHeading(items) {
+        var isExtrasActive = activeCategory === "extras";
+
+        if (isExtrasActive) {
+          extrasHeadingText.textContent =
+            "Customize your pizza with our extras";
+          extrasHeading.classList.remove("hidden");
+        } else {
+          extrasHeading.classList.add("hidden");
+        }
+      }
+
       function renderFilters(items) {
         var categories = Array.from(
           new Set(
@@ -544,8 +596,8 @@
               .map(function (item) {
                 return item.categoria;
               })
-              .filter(Boolean)
-          )
+              .filter(Boolean),
+          ),
         );
 
         categoryFilters.innerHTML =
@@ -581,11 +633,91 @@
         });
       }
 
+      function renderExtrasCard(item) {
+        return (
+          '<article class="bg-offwhite border border-black/10 rounded-[24px] p-6 md:p-7 flex flex-col justify-between min-h-[180px]">' +
+          "<div>" +
+          '<div class="flex items-start justify-between gap-4 mb-4">' +
+          '<span class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">' +
+          item.categoria +
+          "</span>" +
+          '<span class="text-spruce text-2xl uppercase leading-none shrink-0" style="font-family:Barlow Condensed,sans-serif;font-weight:700;">' +
+          formatPrice(item.prezzo) +
+          "</span>" +
+          "</div>" +
+          '<h3 class="text-spruce uppercase leading-none" style="font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:700;">' +
+          item.nome +
+          "</h3>" +
+          "</div>" +
+          "</article>"
+        );
+      }
+
+      function renderDefaultCard(item) {
+        var metaLine = [];
+        if (item.subSectionLabel) metaLine.push(item.subSectionLabel);
+        if (item.formato) metaLine.push(item.formato);
+
+        return (
+          '<article class="bg-offwhite border border-black/10 rounded-[24px] p-6 md:p-7 flex flex-col justify-between min-h-[280px]">' +
+          "<div>" +
+          '<div class="flex items-start justify-between gap-4 mb-4">' +
+          '<span class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">' +
+          item.categoria +
+          "</span>" +
+          '<span class="text-spruce text-2xl uppercase leading-none shrink-0" style="font-family:Barlow Condensed,sans-serif;font-weight:700;">' +
+          formatPrice(item.prezzo) +
+          "</span>" +
+          "</div>" +
+          '<h3 class="text-spruce uppercase leading-none mb-3" style="font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:700;">' +
+          item.nome +
+          "</h3>" +
+          (metaLine.length
+            ? '<p class="text-ink/35 text-[11px] uppercase tracking-[0.16em] font-semibold mb-3">' +
+              metaLine.join(" · ") +
+              "</p>"
+            : "") +
+          '<p class="text-ink/65 text-sm leading-relaxed mb-5">' +
+          (item.descrizione ||
+            "For more detailed information, please ask the staff") +
+          "</p>" +
+          (item.tagList.length
+            ? '<div class="flex flex-wrap gap-2 mb-4">' +
+              item.tagList
+                .map(function (tag) {
+                  return (
+                    '<span class="inline-flex items-center rounded-full bg-black/5 px-2.5 py-1 text-[11px] text-ink/55 uppercase tracking-[0.12em] font-semibold">' +
+                    tag +
+                    "</span>"
+                  );
+                })
+                .join("") +
+              "</div>"
+            : "") +
+          "</div>" +
+          '<div class="pt-4 border-t border-black/10 flex items-center justify-between gap-4">' +
+          '<span class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold">' +
+          (item.allergeni.length
+            ? "Allergens: " + item.allergeni.join(", ")
+            : "CASÈ Selection") +
+          "</span>" +
+          '<button type="button" class="js-more text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70 transition-opacity" data-id="' +
+          item.uid +
+          '">' +
+          "More →" +
+          "</button>" +
+          "</div>" +
+          "</article>"
+        );
+      }
+
       function renderMenu(items) {
         var filtered = items.filter(function (item) {
           if (activeCategory === "all") return true;
           return item.categoriaSlug === activeCategory;
         });
+
+        updateExtrasHeading(filtered);
 
         if (!filtered.length) {
           menuContainer.innerHTML =
@@ -595,61 +727,11 @@
 
         menuContainer.innerHTML = filtered
           .map(function (item) {
-            var metaLine = [];
-            if (item.subSectionLabel) metaLine.push(item.subSectionLabel);
-            if (item.formato) metaLine.push(item.formato);
+            if (item.sectionId === "extras") {
+              return renderExtrasCard(item);
+            }
 
-            return (
-              '<article class="bg-offwhite border border-black/10 rounded-[24px] p-6 md:p-7 flex flex-col justify-between min-h-[280px]">' +
-              "<div>" +
-              '<div class="flex items-start justify-between gap-4 mb-4">' +
-              '<span class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">' +
-              item.categoria +
-              "</span>" +
-              '<span class="text-spruce text-2xl uppercase leading-none shrink-0" style="font-family:Barlow Condensed,sans-serif;font-weight:700;">' +
-              formatPrice(item.prezzo) +
-              "</span>" +
-              "</div>" +
-              '<h3 class="text-spruce uppercase leading-none mb-3" style="font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:700;">' +
-              item.nome +
-              "</h3>" +
-              (metaLine.length
-                ? '<p class="text-ink/35 text-[11px] uppercase tracking-[0.16em] font-semibold mb-3">' +
-                  metaLine.join(" · ") +
-                  "</p>"
-                : "") +
-              '<p class="text-ink/65 text-sm leading-relaxed mb-5">' +
-              (item.descrizione ||
-                "For more detailed information, please ask the staff") +
-              "</p>" +
-              (item.tagList.length
-                ? '<div class="flex flex-wrap gap-2 mb-4">' +
-                  item.tagList
-                    .map(function (tag) {
-                      return (
-                        '<span class="inline-flex items-center rounded-full bg-black/5 px-2.5 py-1 text-[11px] text-ink/55 uppercase tracking-[0.12em] font-semibold">' +
-                        tag +
-                        "</span>"
-                      );
-                    })
-                    .join("") +
-                  "</div>"
-                : "") +
-              "</div>" +
-              '<div class="pt-4 border-t border-black/10 flex items-center justify-between gap-4">' +
-              '<span class="text-ink/40 text-[11px] uppercase tracking-[0.16em] font-semibold">' +
-              (item.allergeni.length
-                ? "Allergens: " + item.allergeni.join(", ")
-                : "CASÈ Selection") +
-              "</span>" +
-              '<button type="button" class="js-more text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70 transition-opacity" data-id="' +
-              item.uid +
-              '">' +
-              "More →" +
-              "</button>" +
-              "</div>" +
-              "</article>"
-            );
+            return renderDefaultCard(item);
           })
           .join("");
 
