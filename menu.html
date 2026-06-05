@@ -181,9 +181,9 @@
               class="text-white/70 text-sm md:text-base mt-5 max-w-2xl leading-relaxed"
             >
               Many of the products we use are included in the list of Slow Food
-              Presidia. <br> Food Presidia are projects that protect
-              small-scale, high-quality producers worth preserving, who use
-              traditional methods.
+              Presidia. <br />
+              Food Presidia are projects that protect small-scale, high-quality
+              producers worth preserving, who use traditional methods.
             </p>
           </div>
         </div>
@@ -444,7 +444,7 @@
       });
 
       var allMenuItems = [];
-      var activeCategory = "all";
+      var activeCategory = "starters";
 
       var menuContainer = document.getElementById("menu-container");
       var categoryFilters = document.getElementById("category-filters");
@@ -594,7 +594,7 @@
         if (e.key === "Escape") hideModal();
       });
 
-      function updateExtrasHeading(items) {
+      function updateExtrasHeading() {
         var isExtrasActive = activeCategory === "extras";
 
         if (isExtrasActive) {
@@ -617,29 +617,24 @@
           ),
         );
 
-        categoryFilters.innerHTML =
-          '<button class="category-btn ' +
-          (activeCategory === "all"
-            ? "active-category bg-spruce text-white"
-            : "bg-offwhite text-ink border border-black/10") +
-          ' inline-flex items-center rounded-full px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold" data-category="all" type="button">All</button>' +
-          categories
-            .map(function (cat) {
-              var slug = slugify(cat);
-              var active = activeCategory === slug;
-              return (
-                '<button class="category-btn ' +
-                (active
-                  ? "active-category bg-spruce text-white"
-                  : "bg-offwhite text-ink border border-black/10") +
-                ' inline-flex items-center rounded-full px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold" data-category="' +
-                slug +
-                '" type="button">' +
-                cat +
-                "</button>"
-              );
-            })
-            .join("");
+        categoryFilters.innerHTML = categories
+          .map(function (cat) {
+            var slug = slugify(cat);
+            var active = activeCategory === slug;
+
+            return (
+              '<button class="category-btn ' +
+              (active
+                ? "active-category bg-spruce text-white"
+                : "bg-offwhite text-ink border border-black/10") +
+              ' inline-flex items-center rounded-full px-4 py-2 text-xs uppercase tracking-[0.14em] font-semibold" data-category="' +
+              slug +
+              '" type="button">' +
+              cat +
+              "</button>"
+            );
+          })
+          .join("");
 
         document.querySelectorAll(".category-btn").forEach(function (btn) {
           btn.addEventListener("click", function () {
@@ -730,11 +725,10 @@
 
       function renderMenu(items) {
         var filtered = items.filter(function (item) {
-          if (activeCategory === "all") return true;
           return item.categoriaSlug === activeCategory;
         });
 
-        updateExtrasHeading(filtered);
+        updateExtrasHeading();
 
         if (!filtered.length) {
           menuContainer.innerHTML =
