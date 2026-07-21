@@ -140,9 +140,35 @@
     <!-- MAIN -->
     <main class="pt-16">
       <!-- HERO -->
-      <section class="bg-spruce text-white px-6 py-16 md:py-24">
+      <section
+        class="bg-spruce text-white px-6 py-16 md:py-24 relative overflow-hidden"
+      >
+        <!-- LAYER DECORATIVO SVG -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <img
+            src="/assets/imgChiara/ok_bianche.svg"
+            alt=""
+            class="absolute top-2 w-12 md:w-32 rotate-[30deg]"
+          />
+          <img
+            src="/assets/imgChiara/corna_bianche.svg"
+            alt=""
+            class="absolute top-8 right-4 w-12 md:w-32 rotate-[15deg] lg:-rotate-[30deg]"
+          />
+          <img
+            src="/assets/imgChiara/spritz.svg"
+            alt=""
+            class="absolute bottom-4 left-1/2 w-28 md:w-52 -rotate-[10deg] md:hidden"
+          />
+          <img
+            src="/assets/imgChiara/pomodori.svg"
+            alt=""
+            class="absolute top-1/2 right-1 w-24 md:w-52 md:top-1 md:right-1/2 rotate-[25deg]"
+          />
+        </div>
+
         <div
-          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end"
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end relative z-10"
         >
           <div class="lg:col-span-8">
             <p
@@ -182,8 +208,9 @@
             >
               Many of the products we use are included in the list of Slow Food
               Presidia. <br />
-              Slow Food Presidia are projects that protect small-scale, high-quality
-              producers worth preserving, who use traditional methods.
+              Slow Food Presidia are projects that protect small-scale,
+              high-quality producers worth preserving, who use traditional
+              methods.
             </p>
           </div>
         </div>
