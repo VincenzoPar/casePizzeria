@@ -1,12 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CASÈ — Artisanal pizzeria in Vienna."
-    />
+    <meta name="description" content="CASÈ — Artisanal pizzeria in Vienna." />
     <title>CASÈ — Artisanal pizzeria in Vienna.</title>
 
     <!-- Tailwind CDN -->
@@ -25,6 +22,34 @@
             fontFamily: {
               display: ["Barlow Condensed", "sans-serif"],
               body: ["DM Sans", "sans-serif"],
+            },
+            keyframes: {
+              "fade-in-up": {
+                "0%": {
+                  opacity: "0",
+                  transform: "translateY(24px)",
+                },
+                "100%": {
+                  opacity: "1",
+                  transform: "translateY(0)",
+                },
+              },
+              "fade-in-right-soft": {
+                "0%": {
+                  opacity: "0",
+                  transform: "translateX(60px) scale(0.96)",
+                },
+                "100%": {
+                  opacity: "1",
+                  transform: "translateX(0) scale(1)",
+                },
+              },
+            },
+            animation: {
+              "fade-in-up":
+                "fade-in-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+              "fade-in-right-soft":
+                "fade-in-right-soft 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards",
             },
           },
         },
@@ -84,10 +109,7 @@
             </li>
           </ul>
 
-          <!-- Desktop CTA -->
-          <a href="menu.html" class="hidden md:inline-block btn-cta"
-            >GO TO THE MENU →</a
-          >
+          <span></span>
 
           <!-- Hamburger -->
           <button
@@ -136,11 +158,6 @@
               >Contacts</a
             >
           </li>
-          <li class="pt-3">
-            <a href="menu.html" class="btn-cta block text-center py-3"
-              >GO TO THE MENU →</a
-            >
-          </li>
         </ul>
       </div>
     </nav>
@@ -150,78 +167,62 @@
 ═══════════════════════════════════════ -->
     <main class="pt-16">
       <!-- HERO -->
-      <section class="min-h-screen bg-linen flex items-center px-6 py-5 sm:py-24">
+      <section
+        class="min-h-screen bg-linen flex items-center px-6 py-10 sm:py-24 overflow-hidden"
+      >
         <div
-          class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-12 items-center"
+          class="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 items-center relative"
         >
-          <div>
+          <!-- Colonna testo -->
+          <div class="relative z-20 animate-fade-in-up order-1">
             <span class="section-label">Wien · Since 2026</span>
+
             <h1 class="hero-title mb-6">
               MADE<br />
               WITH
               <span class="hero-word-swap">
-                <span class="word word-heart">HEART</span>
-                <span class="word word-hands">HANDS</span>
+                <span class="word word-hands text-spruce">HANDS</span>
               </span>
             </h1>
+
             <p class="text-ink/55 text-base leading-relaxed max-w-xs mb-8">
               Artisan pizza, wholesome ingredients, a place to relax. No rush.
             </p>
-            <div class="flex gap-4 flex-wrap">
+
+            <div class="flex gap-4 flex-wrap relative z-30">
               <a
-                href="eventi.html"
+                href="menu.html"
                 class="btn-cta"
                 style="
                   padding: 0.7rem 1.6rem;
                   font-size: 0.85rem;
                   letter-spacing: 0.14em;
                 "
-                >EXPLORE OUR EVENTS →</a
               >
+                GO TO THE MENU →
+              </a>
+
               <a
                 href="chi-siamo.html"
-                style="
-                  display: inline-block;
-                  background: transparent;
-                  color: #07090a;
-                  font-family: 'Barlow Condensed', sans-serif;
-                  font-weight: 700;
-                  font-size: 0.85rem;
-                  letter-spacing: 0.14em;
-                  text-transform: uppercase;
-                  padding: 0.65rem 1.4rem;
-                  border-radius: 3px;
-                  border: 1.5px solid #07090a;
-                  text-decoration: none;
-                  transition: background 0.18s, color 0.18s;
-                "
-                onmouseover="
-                  this.style.background = '#07090A';
-                  this.style.color = 'white';
-                "
-                onmouseout="
-                  this.style.background = 'transparent';
-                  this.style.color = '#07090A';
-                "
-                >ABOUT</a
+                class="inline-block bg-linen text-ink font-display font-bold text-[0.85rem] tracking-[0.14em] uppercase px-[1.4rem] py-[0.65rem] rounded-[3px] border border-ink no-underline transition hover:bg-ink hover:text-white"
               >
+                ABOUT
+              </a>
             </div>
           </div>
+
+          <!-- Colonna visual -->
           <div
-            class="aspect-[4/5] bg-linen rounded-md overflow-hidden relative"
+            class="relative order-2 min-h-[240px] sm:min-h-[320px] md:min-h-[680px]"
             aria-hidden="true"
           >
-            <div class="hero-visual-swap">
+            <div
+              class="absolute inset-0 flex items-center justify-center md:block"
+            >
               <img
-                src="./assets/loveHands.svg"
+                src="./assets/mani-pizza.svg"
                 alt=""
-                class="hero-image hero-image-heart"
-              />
-
-              <img
-                src="./assets/logoNeroCase.svg"
-                alt=""
-                class="hero-image hero-image-logo"
+                class="hero-image-zoom w-[420px] sm:w-[420px] md:w-[1000px] lg:w-[1250px] max-w-none h-auto md:absolute md:right-[-220px] md:top-1/2 md:-translate-y-1/2 z-10 pointer-events-none select-none"
               />
             </div>
           </div>
@@ -259,7 +260,7 @@
                 display: inline-block;
                 background: transparent;
                 color: #07090a;
-                font-family: 'Barlow Condensed', sans-serif;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
                 font-weight: 700;
                 font-size: 0.85rem;
                 letter-spacing: 0.14em;
@@ -268,7 +269,9 @@
                 border-radius: 3px;
                 border: 1.5px solid #07090a;
                 text-decoration: none;
-                transition: background 0.18s, color 0.18s;
+                transition:
+                  background 0.18s,
+                  color 0.18s;
               "
               onmouseover="
                 this.style.background = '#07090A';
@@ -284,6 +287,30 @@
         </div>
       </section>
 
+      <!-- ABBRACCIO
+      
+      <section>
+        <div
+          class="bg-spruce flex justify-center items-center pt-16 overflow-visible"
+        >
+          <img
+            src="assets/imgChiara/mano unita_1_bianca.svg"
+            alt="mano che si abbraccia"
+            class="rotate-45"
+          />
+        </div>
+        <div
+          class="bg-spruce flex justify-center items-center pt-16 overflow-visible"
+        >
+          <img
+            src="assets/imgChiara/mano unita_2_bianca.svg"
+            alt="mano che si abbraccia"
+            class="rotate-45"
+          />
+        </div>
+      </section>
+      -->
+
       <!-- VALUES -->
       <section class="bg-spruce py-12 px-6">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3">
@@ -291,41 +318,43 @@
             class="reveal text-center py-7 px-6 border-b sm:border-b-0 sm:border-r border-white/10"
           >
             <img
-              src="assets/okMani.png"
+              src="assets/imgChiara/ok_bianche.svg"
               alt="Italian gesture"
-              class="mx-auto h-24 w-auto object-contain"
+              class="mx-auto h-40 w-auto object-contain"
             />
             <div
-              class="text-white/55 text-xs tracking-widest uppercase mt-2 font-semibold"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-            Passion for things done right
+              Passion for things done right
             </div>
           </div>
           <div
             class="reveal text-center py-7 px-6 border-b sm:border-b-0 sm:border-r border-white/10"
           >
             <img
-              src="assets/strettaMani.png"
+              src="assets/imgChiara/mani cuore_bianche.svg"
               alt="Italian gesture"
-              class="mx-auto h-24 w-auto object-contain"
+              class="mx-auto h-40 w-auto object-contain"
             />
             <div
-              class="text-white/55 text-xs tracking-widest uppercase mt-2 font-semibold"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-            Love for Sharing
+              Love for Sharing
             </div>
           </div>
-          <div class="reveal text-center py-7 px-6">
+          <div
+            class="reveal text-center py-7 px-6 border-b sm:border-b-0 sm:border-r border-white/10"
+          >
             <img
-              src="assets/italianGesture.png"
+              src="assets/imgChiara/corna_bianche.svg"
               alt="Italian gesture"
-              class="mx-auto h-24 w-auto object-contain"
+              class="mx-auto h-40 w-auto object-contain"
             />
             <div
-              class="text-white/55 text-xs tracking-widest uppercase mt-2 font-semibold"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Italian Ingredients
             </div>
@@ -349,7 +378,7 @@
             <a
               href="eventi.html"
               style="
-                font-family: 'Barlow Condensed', sans-serif;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
                 font-weight: 700;
                 font-size: 0.82rem;
                 letter-spacing: 0.12em;
@@ -393,13 +422,20 @@
 
       <!-- CTA BANNER -->
       <section
-        class="bg-red py-20 px-6 text-center"
+        class="bg-red py-20 px-6 text-center flex flex-col"
         style="background: #c4272a"
       >
+        <div class="lg:ps-24">
+          <img
+            src="assets/imgChiara/mano unita_1_bianca.svg"
+            alt="braccio unito bianco"
+            class="max-h-52 w-96"
+          />
+        </div>
         <div class="reveal">
           <h2
             style="
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-weight: 700;
               font-size: clamp(2rem, 5vw, 4rem);
               text-transform: uppercase;
@@ -419,7 +455,7 @@
               display: inline-block;
               background: white;
               color: #c4272a;
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-weight: 700;
               font-size: 0.85rem;
               letter-spacing: 0.14em;
@@ -427,7 +463,9 @@
               padding: 0.8rem 2rem;
               border-radius: 3px;
               text-decoration: none;
-              transition: opacity 0.18s, transform 0.18s;
+              transition:
+                opacity 0.18s,
+                transform 0.18s;
             "
             onmouseover="
               this.style.opacity = '0.9';
@@ -439,6 +477,13 @@
             "
             >GO TO THE MENU →</a
           >
+        </div>
+        <div class="w-full flex justify-end lg:px-24">
+          <img
+            src="assets/imgChiara/mano unita_2_bianca.svg"
+            alt="braccio unito bianco"
+            class="max-h-52 w-96"
+          />
         </div>
       </section>
     </main>
@@ -531,7 +576,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Navigation
             </p>
@@ -548,7 +593,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Where We Are
             </p>
