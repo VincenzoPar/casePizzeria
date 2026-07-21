@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -143,48 +143,42 @@
      MAIN
 ═══════════════════════════════════════ -->
 
-    <main class="pt-16">
+    <main class="pt-0">
+      <!-- SVG decorativo centrale -->
+      <div
+        class="absolute inset-0 z-0 flex items-center justify-center"
+        aria-hidden="true"
+      >
+        <img
+          src="assets/imgChiara/spritz.svg"
+          alt=""
+        />
+      </div>
       <!-- HERO -->
       <section class="min-h-[70vh] bg-linen flex items-center px-6 py-24">
         <div
-          class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 !place-items-center"
         >
-          <div>
+          <div class="relative z-20 flex flex-col md:items-center">
             <span class="section-label">About Us</span>
-            <h1 class="hero-title mb-6">PIZZA,<br />HOSPITALITY<br />AND IDENTITY.</h1>
-            <p class="text-ink/55 text-base leading-relaxed max-w-md">
-              CASÉ was born from the desire to bring an authentic Italian
-              experience to Vienna, inspired by the Caserta tradition of pizza
-              and by the value of true hospitality. Our goal is simple: to
-              create a welcoming, honest, and vibrant place where every guest
-              can feel at home. CASÉ is more than a pizzeria. It is a project
-              built around a love for dough, attention to ingredients, and the
-              belief that food can create connection, warmth, and shared
-              moments.
-            </p>
-          </div>
-
-          <div
-            class="aspect-[4/5] bg-offwhite rounded-md overflow-hidden flex items-center justify-center"
-          >
-            <img
-              src="./assets/logoCase.svg"
-              alt="Logo CASÈ"
-              class="w-[70%] h-[70%] object-contain opacity-90"
-            />
+            <h1 class="hero-title mb-6 md:ps-32 md:ms-60">
+              PIZZA,<br />HOSPITALITY<br />AND IDENTITY.
+            </h1>
           </div>
         </div>
       </section>
 
       <!-- STORIA -->
-      <section class="bg-offwhite px-6 py-24">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section class="bg-offwhite px-6 py-24 md:mt-60 md:pt-36">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 relative z-20"
+        >
           <div>
             <span class="section-label">Our Story</span>
             <h2 class="section-title">A PROJECT DRIVEN<br />BY PASSION</h2>
           </div>
           <div class="space-y-6">
-            <p class="text-ink/60 leading-relaxed">
+            <p class="text-ink leading-relaxed">
               At the heart of CASÉ is Crescenzo, a 27-year-old pizzaiolo from
               Caserta. For the past seven years, he has lived and worked in
               Vienna, where he has put his experience, technique, and passion
@@ -215,7 +209,7 @@
               <div class="event-badge">01</div>
               <h3
                 style="
-                  font-family: 'Barlow Condensed', sans-serif;
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
                   font-weight: 700;
                   font-size: 1.35rem;
                   text-transform: uppercase;
@@ -236,7 +230,7 @@
               <div class="event-badge">02</div>
               <h3
                 style="
-                  font-family: 'Barlow Condensed', sans-serif;
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
                   font-weight: 700;
                   font-size: 1.35rem;
                   text-transform: uppercase;
@@ -258,7 +252,7 @@
               <div class="event-badge">03</div>
               <h3
                 style="
-                  font-family: 'Barlow Condensed', sans-serif;
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
                   font-weight: 700;
                   font-size: 1.35rem;
                   text-transform: uppercase;
@@ -323,7 +317,7 @@
         <div class="max-w-3xl mx-auto">
           <h2
             style="
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-weight: 700;
               font-size: clamp(2rem, 5vw, 4rem);
               text-transform: uppercase;
@@ -345,7 +339,7 @@
               display: inline-block;
               background: white;
               color: #c4272a;
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-weight: 700;
               font-size: 0.85rem;
               letter-spacing: 0.14em;
@@ -448,7 +442,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Navigation
             </p>
@@ -467,7 +461,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Where we are
             </p>
