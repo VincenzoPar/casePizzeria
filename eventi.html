@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -136,20 +136,26 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="pt-16 bg-linen text-ink">
+    <main class="pt-16 bg-linen text-ink relative">
+      <!-- SVG in alto a destra, sotto la navbar -->
+      <img
+        src="assets/imgChiara/pomodori.svg"
+        alt="Decorazione"
+        class="absolute top-24 md:top-32 right-6 w-32 h-auto md:w-[25%] md:h-auto z-10 pointer-events-none rotate-45"
+      />
       <section class="px-6 py-16 md:py-20">
         <div class="max-w-6xl mx-auto">
           <div class="max-w-2xl mb-10 md:mb-14">
             <p
               class="text-red text-xs tracking-[0.2em] uppercase font-semibold mb-3"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Events
             </p>
             <h1
               class="text-4xl md:text-6xl uppercase leading-none text-spruce"
               style="
-                font-family: 'Barlow Condensed', sans-serif;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
                 font-weight: 700;
               "
             >
@@ -255,7 +261,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Navigation
             </p>
@@ -270,7 +276,7 @@
           <div>
             <p
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
-              style="font-family: 'Barlow Condensed', sans-serif"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Where are we
             </p>
@@ -325,7 +331,7 @@
             id="modal-title"
             class="text-spruce uppercase leading-none"
             style="
-              font-family: 'Barlow Condensed', sans-serif;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
               font-size: 2rem;
               font-weight: 700;
             "
