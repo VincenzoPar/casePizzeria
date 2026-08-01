@@ -9,35 +9,35 @@
       "items": [
         {
           "id": "a1",
-          "nome": "Tomato Bruschetta",
-          "descrizione": "Wood-fired toasted durum wheat bread, datterino tomatoes, garlic, basil, extra virgin olive oil",
-          "prezzo": 6.50,
-          "tag": ["vegetarian"],
-          "allergeni": ["gluten"]
+          "nome": "Olive Verdi",
+          "descrizione": "Green olives, topped with lemon zest.",
+          "prezzo": 4.90,
+          "tag": ["vegan", "to share"],
+          "allergeni": []
         },
         {
           "id": "a2",
-          "nome": "Casè Mixed Fried Selection",
-          "descrizione": "Mini montanarine, croquettes, pasta fritters, battered zucchini — lightly fried in seed oil",
-          "prezzo": 12.00,
+          "nome": "Bruschette (2 St.)",
+          "descrizione": "Stracciatella, red and yellow cherry tomatoes, anchovy fillets, and oregano-infused olive oil.",
+          "prezzo": 10.50,
           "tag": ["to share"],
-          "allergeni": ["gluten", "milk", "eggs"]
+          "allergeni": ["fish", "milk"]
         },
         {
           "id": "a3",
-          "nome": "Meatballs in Tomato Sauce",
-          "descrizione": "Oven-baked beef and pork meatballs, San Marzano DOP tomato sauce, basil",
-          "prezzo": 9.00,
-          "tag": [],
-          "allergeni": ["gluten", "eggs", "milk"]
+          "nome": "U' Rutiell (ital. Il Ruotiello)",
+          "descrizione": "Pizza baked traditionally in the round pan, topped with tomato sauce and oregano-infused olive oil – soft and airy in the centre, with a crisp crust.",
+          "prezzo": 7.20,
+          "tag": ["to share", "vegan"],
+          "allergeni": ["gluten"]
         },
         {
           "id": "a4",
-          "nome": "Casè Sharing Board",
-          "descrizione": "Mixed cured meats (cured ham, Neapolitan salami, mortadella), cheeses, pickled vegetables and toasted bread",
-          "prezzo": 18.00,
-          "tag": ["to share"],
-          "allergeni": ["gluten", "milk"]
+          "nome": "Insalata",
+          "descrizione": "Mixed leaf salad, red and yellow cherry tomatoes, fresh carrots, olive crumble and pine nuts. + tuna € 3,50",
+          "prezzo": 6.80,
+          "tag": ["to share", "vegetarian"],
+          "allergeni": ["gluten", "nuts"]
         }
       ]
     },
@@ -50,57 +50,49 @@
           "id": "p1",
           "nome": "Margherita",
           "immagine": "./assets/eventi/pizza-napoletana.jpg",
-          "descrizione": "San Marzano DOP tomato, fior di latte, Grana Padano 24 mesi, basil.",
-          "prezzo": 10.80,
+          "descrizione": "San Marzano DOP tomato sauce, Fior di Latte, 24-month-aged Grana Padano, basil.",
+          "prezzo": 10.00,
           "tag": ["classic", "vegetarian"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p2",
-          "nome": "Marinara Classica",
-          "descrizione": "San Marzano DOP tomato, garlic, oregano, basil.",
-          "prezzo": 9.50,
+          "nome": "Marinara",
+          "descrizione": "San Marzano DOP tomato sauce, fresh garlic, basil, oregano-infused olive oil.",
+          "prezzo": 9.20,
           "tag": ["vegan", "classic"],
           "allergeni": ["gluten"]
         },
         {
           "id": "p3",
-          "nome": "Diavola",
-          "descrizione": "San Marzano DOP tomato, fior di latte, spicy salami, Pecorino Romano DOP, basil.",
-          "prezzo": 13.80,
-          "tag": ["spicy", "classic"],
+          "nome": "Bufala",
+          "descrizione": "Slow-cooked San Marzano DOP tomato sauce, Campanian buffalo mozzarella, Pecorino Romano DOP, basil.",
+          "prezzo": 14.50,
+          "tag": ["classic", "vegetarian"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p4",
-          "nome": "Bufalina Casè",
-          "descrizione": "Slow-cooked San Marzano DOP tomato, mozzarella di bufala campana, Pecorino Romano DOP, homemade basil pesto.",
-          "prezzo": 14.50,
-          "tag": ["vegetarian", "classic"],
+          "nome": "Prosciutto Cotto",
+          "descrizione": "San Marzano DOP tomato sauce, cooked ham, 24-month-aged Grana Padano, Caciocavallo (traditional Southern Italian cow’s milk cheese), basil.",
+          "prezzo": 13.80,
+          "tag": ["classic"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "p5",
-          "nome": "Prosciutto Cotto",
-          "descrizione": "San Marzano DOP tomato, artisanal cooked ham, Grana Padano 24 mesi, basil.",
-          "prezzo": 13.50,
-          "tag": ["classic"],
-          "allergeni": ["gluten"]
-        },
-        {
-          "id": "p6",
-          "nome": "Provola and Pepper, Casè-Style",
-          "descrizione": "Slow-cooked San Marzano DOP tomato, mozzarella di bufala campana, smoked provola, freshly ground black pepper, basil.",
-          "prezzo": 14.50,
+          "nome": "Provola e Pepe",
+          "descrizione": "Slow-cooked San Marzano DOP tomato sauce, Campanian buffalo mozzarella, smoked Provola, black pepper, basil.",
+          "prezzo": 14.20,
           "tag": ["classic", "spicy"],
           "allergeni": ["gluten", "milk"]
         },
         {
-          "id": "p7",
-          "nome": "Vanvitelliana",
-          "descrizione": "Yellow cherry tomato DOP, fior di latte, Pecorino Romano DOP. After baking: Caserta black pig sausage, Slow Food Presidium Caiazzano olive powder, basil. A tribute to the gardens, colors, and elegance of the Royal Palace of Caserta.",
+          "id": "p6",
+          "nome": "Diavola",
+          "descrizione": "San Marzano DOP tomato sauce, Fior di Latte, spicy salami, Pecorino Romano DOP, basil.",
           "prezzo": 13.50,
-          "tag": ["classic"],
+          "tag": ["classic", "spicy"],
           "allergeni": ["gluten", "milk"]
         }
       ]
@@ -112,57 +104,58 @@
       "items": [
         {
           "id": "i1",
-          "nome": "Capricciosa CASÈ",
-          "descrizione": "Artichoke cream, fior di latte, artisanal cooked ham, porcini mushrooms, mild salami, artichokes in two textures, and Slow Food Presidium Caiazzane olive powder.",
+          "nome": "Capricciò",
+          "descrizione": "Artichoke cream, cooked ham, mushrooms, mild salami, marinated artichokes, olive crumble from Caiazzo (Slow Food Presidio).",
           "prezzo": 15.50,
           "tag": ["signature"],
           "allergeni": ["gluten", "milk"]
         },
         {
           "id": "i2",
-          "nome": "Marinara CASÈ",
-          "descrizione": "Yellow cherry tomato DOP, fresh garlic, capers from Salina. After baking: Apulian stracciatella cheese, anchovy fillets, confit cherry tomatoes, oregano from the Matese Mountains, and black garlic mayonnaise.",
-          "prezzo": 17.50,
+          "nome": "Ri Mari (ital. Del Mare)",
+          "descrizione": "Yellow DOP tomato sauce, capers from Salina. After baking: Apulian stracciatella, anchovy fillets, confit cherry tomatoes, oregano-infused olive oil, black garlic mayonnaise.",
+          "prezzo": 16.80,
           "tag": ["signature"],
           "allergeni": ["gluten", "milk", "fish", "eggs"]
         },
         {
           "id": "i3",
-          "nome": "CASÈ Brutal",
-          "descrizione": "Potato cream, smoked provola, baked potatoes, aged Pecorino Romano, italian sausage. After baking: homemade mayonnaise, oregano from the Matese Mountains. You can add porchetta for an extra €2.00.",
-          "prezzo": 14.50,
-          "tag": ["signature"],
-          "allergeni": ["gluten", "milk", "eggs"]
-        }
-      ]
-    },
-    {
-      "id": "speciali",
-      "label": "Territorial Specialities",
-      "labelEn": "Territorial Specialities",
-      "items": [
-        {
-          "id": "d1",
-          "nome": "Tonno e Monti",
-          "descrizione": "Fior di latte, tuna fillets, Alife onions. After baking: red and yellow cherry tomato confit, Slow Food Presidium Caiazzano olive powder, crusco peppers.",
-          "prezzo": 16.50,
-          "tag": ["speciality"],
-          "allergeni": ["gluten", "milk", "fish"]
-        },
-        {
-          "id": "d2",
-          "nome": "Cinque Formaggi CASÈ",
-          "descrizione": "24-month aged Parmigiano-Reggiano cream, fior di latte, smoked provola, gorgonzola, caciocavallo. After baking: carrot cream with honey, basil. (A tribute to a dear childhood friend)",
+          "nome": "Formaggiosa",
+          "descrizione": "Parmesan cream made from 24-month-aged Parmesan, Fior di Latte, smoked Provola, Gorgonzola, Caciocavallo (traditional Southern Italian cow’s milk cheese). After baking: carrot-honey cream, basil. 'Homage to a dear childhood friend'",
           "prezzo": 17.50,
-          "tag": ["vegetarian, speciality"],
+          "tag": ["signature", "vegetarian"],
           "allergeni": ["gluten", "milk"]
         },
         {
-          "id": "d3",
+          "id": "i4",
+          "nome": "Tonno e Monti",
+          "descrizione": "Fior di Latte, tuna fillets, onions from Alife. After baking: red and yellow confit cherry tomatoes, olive crumble from Caiazzo (Slow Food Presidio), crispy pointed peppers.",
+          "prezzo": 16.50,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk", "fish"]
+        },
+        {
+          "id": "i5",
+          "nome": "Vanvitelliana",
+          "descrizione": "Yellow DOP tomato sauce, Fior di Latte, Pecorino Romano DOP. After baking: Casertana black pig sausage, olive crumble from Caiazzo (Slow Food Presidio), basil.",
+          "prezzo": 17.80,
+          "tag": ["signature"],
+          "allergeni": ["gluten", "milk"]
+        },
+        {
+          "id": "i6",
+          "nome": "Carciofella",
+          "descrizione": "Yellow DOP tomato sauce, oven-roasted carrots, marinated artichokes. After baking: artichoke cream, rocket pesto, olive pâté, pine nuts.",
+          "prezzo": 15.20,
+          "tag": ["signature", "vegetarian"],
+          "allergeni": ["gluten", "milk","nuts"]
+        },
+        {
+          "id": "i7",
           "nome": "La Reggia di CASÈ",
-          "descrizione": "24-month aged Parmigiano-Reggiano cream, fior di latte, smoked provola. After baking: aged prosciutto, arugula pesto, confit cherry tomatoes, shavings of Caciocavallo cheese, Slow Food Presidium Caiazzane olive powder.",
-          "prezzo": 5.50,
-          "tag": ["speciality"],
+          "descrizione": "Parmesan cream made from 24-month-aged Parmesan, Fior di Latte and smoked Provola. After baking: Caciocavallo (traditional Southern Italian cow’s milk cheese), olive crumble from Caiazzo (Slow Food Presidio). 'Homage to the gardens, beauty and elegance of the Royal Palace of Caserta (Reggia di Caserta).'",
+          "prezzo": 18.50,
+          "tag": ["signature", "vegetarian"],
           "allergeni": ["gluten", "milk"]
         }
       ]
