@@ -171,51 +171,27 @@
           "items": [
             {
               "id": "v1",
-              "nome": "Chianti Classico DOCG",
-              "descrizione": "100% Sangiovese — Tuscany. Fruity with spicy notes and elegant tannins.",
-              "formato": "75cl",
-              "prezzo": 22.00,
-              "tag": ["red"]
+              "nome": "Bianco Falanghina",
+              "descrizione": "",
+              "formato": "glass",
+              "prezzo": 5.50,
+              "tag": ["white"]
             },
             {
               "id": "v2",
-              "nome": "Primitivo di Manduria DOP",
-              "descrizione": "Apulia. Full-bodied, ripe red fruit, smooth and persistent.",
-              "formato": "75cl",
-              "prezzo": 24.00,
+              "nome": "Rosso Aglianico",
+              "descrizione": "",
+              "formato": "glass",
+              "prezzo": 6.50,
               "tag": ["red"]
             },
             {
               "id": "v3",
-              "nome": "Falanghina dei Campi Flegrei DOC",
-              "descrizione": "Campania. Fresh, floral, with peach and citrus notes — perfect with white pizzas.",
-              "formato": "75cl",
-              "prezzo": 20.00,
-              "tag": ["white"]
-            },
-            {
-              "id": "v4",
-              "nome": "Vermentino di Sardegna DOC",
-              "descrizione": "Sardinia. Savoury and mineral with lively acidity.",
-              "formato": "75cl",
-              "prezzo": 19.00,
-              "tag": ["white"]
-            },
-            {
-              "id": "v5",
-              "nome": "Prosecco Superiore DOCG",
-              "descrizione": "Conegliano-Valdobbiadene. Fine bubbles, white fruit, clean finish.",
-              "formato": "75cl",
-              "prezzo": 21.00,
-              "tag": ["sparkling"]
-            },
-            {
-              "id": "v6",
-              "nome": "House Wine",
-              "descrizione": "Red or white house wine, seasonal selection",
-              "formato": "50cl carafe",
-              "prezzo": 9.00,
-              "tag": ["glass / carafe"]
+              "nome": "Prosecco della casa",
+              "descrizione": "Fine bubbles, white fruit, clean finish.",
+              "formato": "glass",
+              "prezzo": 6.50,
+              "tag": ["white", "sparkling"]
             }
           ]
         },
@@ -225,35 +201,35 @@
           "items": [
             {
               "id": "b1",
-              "nome": "Peroni Nastro Azzurro",
-              "descrizione": "Italian lager — light and refreshing",
+              "nome": "Moretti",
+              "descrizione": "Classic Italian lager, light, crisp, and easy to drink.",
               "formato": "33cl",
-              "prezzo": 4.00,
+              "prezzo": 4.90,
               "tag": ["lager"]
             },
             {
               "id": "b2",
-              "nome": "Casè Craft IPA",
-              "descrizione": "Exclusive IPA for CASÈ — hoppy, with citrus and tropical fruit notes",
+              "nome": "Ichnusa Non Filtrata",
+              "descrizione": "Unfiltered Italian lager with a naturally cloudy appearance and a rich, smooth taste.",
               "formato": "33cl",
-              "prezzo": 6.50,
-              "tag": ["craft", "signature"]
+              "prezzo": 4.90,
+              "tag": ["unfiltered", "lager"]
             },
             {
               "id": "b3",
-              "nome": "Casè Craft Amber Ale",
-              "descrizione": "Malty amber ale, with caramel and biscuit notes — perfect with red pizzas",
+              "nome": "Theresianer Premium Lager",
+              "descrizione": "Elegant golden lager with a balanced malt character and delicate hop aroma.",
               "formato": "33cl",
-              "prezzo": 6.50,
-              "tag": ["craft", "signature"]
+              "prezzo": 4.90,
+              "tag": ["premium", "lager"]
             },
             {
               "id": "b4",
-              "nome": "Moretti Gluten-Free",
-              "descrizione": "Gluten-free lager",
+              "nome": "Theresianen Pils",
+              "descrizione": "Refreshing pilsner with a clean, crisp taste and pleasant hoppy bitterness.",
               "formato": "33cl",
-              "prezzo": 4.50,
-              "tag": ["gluten-free"]
+              "prezzo": 4.90,
+              "tag": ["pils"]
             }
           ]
         },
@@ -263,30 +239,58 @@
           "items": [
             {
               "id": "c1",
-              "nome": "Aperol Spritz",
-              "descrizione": "Aperol, Prosecco, soda, orange",
-              "prezzo": 8.00,
+              "nome": "Americano",
+              "descrizione": "",
+              "prezzo": 8.50,
               "tag": []
             },
             {
               "id": "c2",
-              "nome": "Negroni",
-              "descrizione": "Gin, Campari, red vermouth, orange peel",
+              "nome": "Negroni Sbagliato",
+              "descrizione": "",
               "prezzo": 9.00,
               "tag": []
             },
             {
               "id": "c3",
-              "nome": "Limoncello Spritz",
-              "descrizione": "Sorrento limoncello, Prosecco, tonic water, mint",
-              "prezzo": 8.00,
+              "nome": "Negroni Classico",
+              "descrizione": "",
+              "prezzo": 10.50,
               "tag": []
             },
             {
               "id": "c4",
-              "nome": "Rossini",
-              "descrizione": "Prosecco, fresh strawberries — delicate and fruity cocktail",
-              "prezzo": 7.50,
+              "nome": "Aperol Sour",
+              "descrizione": "",
+              "prezzo": 9.50,
+              "tag": []
+            },
+            {
+              "id": "c5",
+              "nome": "Limoncello Sour",
+              "descrizione": "",
+              "prezzo": 10.50,
+              "tag": []
+            },
+            {
+              "id": "c6",
+              "nome": "Averna Sour",
+              "descrizione": "",
+              "prezzo": 9.50,
+              "tag": []
+            },
+            {
+              "id": "c7",
+              "nome": "Fiori di Sambuco & Vodka",
+              "descrizione": "",
+              "prezzo": 8.20,
+              "tag": []
+            },
+            {
+              "id": "c8",
+              "nome": "Gin Al Chinotto",
+              "descrizione": "",
+              "prezzo": 8.20,
               "tag": []
             }
           ]
@@ -297,52 +301,103 @@
           "items": [
             {
               "id": "an1",
-              "nome": "Still / Sparkling Water",
-              "prezzo": 2.50,
-              "formato": "75cl",
+              "nome": "Soda",
+              "prezzo": 1.9,
+              "formato": "25cl",
               "tag": []
             },
             {
               "id": "an2",
               "nome": "Soft Drinks",
-              "descrizione": "Coca-Cola, Fanta, Sprite, San Bitter, Chinotto",
-              "prezzo": 3.50,
+              "descrizione": "Coca-Cola, Coca Cola Zero, Fanta, Sprite,Ice Tea",
+              "prezzo": 3.90,
               "formato": "33cl",
               "tag": []
             },
             {
               "id": "an3",
-              "nome": "Fruit Juice",
-              "descrizione": "Peach, apricot, apple, pomegranate — organic",
-              "prezzo": 3.50,
+              "nome": "Lemon Soda",
+              "descrizione": "",
+              "prezzo": 2.60,
+              "formato": "25cl",
               "tag": []
             },
             {
               "id": "an4",
-              "nome": "Espresso",
-              "prezzo": 1.50,
+              "nome": "Jasmine Soda",
+              "prezzo": 2.60,
               "tag": []
             },
             {
               "id": "an5",
-              "nome": "Americano",
-              "prezzo": 2.50,
+              "nome": "Chinotto J. Gasko",
+              "prezzo": 3.90,
               "tag": []
             },
             {
               "id": "an6",
-              "nome": "Cappuccino",
-              "prezzo": 2.50,
-              "tag": []
-            },
-            {
-              "id": "an7",
-              "nome": "Digestifs",
-              "descrizione": "Limoncello, Amaro del Capo, grappa, mirto — artisanal selection",
-              "prezzo": 4.00,
+              "nome": "Fior di Sambuco J. Gasko",
+              "prezzo": 3.90,
               "tag": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "spritz",
+      "label": "Spritz",
+      "labelEn": "Spritz",
+      "items": [
+        {
+          "id": "s1",
+          "descrizione": "Homemade basil syrup, prosecco, soda.",
+          "nome": "CASè Spritz",
+          "prezzo": 8.20
+        },
+        {
+          "id": "s2",
+          "nome": "Aperol Spritz",
+          "prezzo": 7.50
+        },
+        {
+          "id": "s3",
+          "nome": "Campari Spritz",
+          "prezzo": 7.90
+        },
+        {
+          "id": "s4",
+          "nome": "Limoncello Spritz",
+          "prezzo": 7.20
+        },
+        {
+          "id": "s5",
+          "nome": "Campari Soda",
+          "prezzo": 6.90
+        },
+        {
+          "id": "s6",
+          "nome": "Averna Soda",
+          "prezzo": 6.90
+        }
+      ]
+    },
+    {
+      "id": "non-alcoholic-spritz",
+      "label": "Non-alcoholic spritz",
+      "labelEn": "Non-alcoholic spritz",
+      "items": [
+        {
+          "id": "na1",
+          "nome": "Giuli Spritz",
+          "descrizione": "Homemade Lemongrass and Butterfly Flower Syrup, Sodarosa J. Gasco, Lemon.",
+          "prezzo": 6.80
+        },
+        {
+          "id": "na2",
+          "nome": "Giuli Spritz",
+          "descrizione": "Homemade jasmine syrup, tonic water.",
+          "prezzo": 5.90
         }
       ]
     },
