@@ -132,17 +132,19 @@
     </nav>
 
     <main class="pt-16">
-      <section class="bg-spruce text-white px-6 py-16 md:py-24">
+      <section class="bg-spruce text-white px-6">
         <div
-          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-end"
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8 items-end lg:pb-24"
         >
-          <div class="lg:col-span-7">
+          <!-- Colonna 1: Testo -->
+          <div>
             <p
               class="text-white/45 text-xs tracking-[0.22em] uppercase font-semibold mb-4"
               style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
               Contact
             </p>
+
             <h1
               class="text-5xl md:text-7xl uppercase leading-none"
               style="
@@ -152,15 +154,26 @@
             >
               Let’s find your table
             </h1>
+
             <p
-              class="text-white/70 text-sm md:text-base mt-5 max-w-xl leading-relaxed"
+              class="text-white/70 text-sm md:text-base mt-5 max-w-md leading-relaxed"
             >
               For reservations, private events, or simply to stop by, you’ll
               find all the necessary contact information here.
             </p>
           </div>
 
-          <div class="lg:col-span-5">
+          <!-- Colonna 2: Immagine -->
+          <div class="flex justify-center order-3 lg:order-2 lg:translate-y-24">
+            <img
+              src="./assets/imgChiara/contatti.svg"
+              alt="Pizza artigianale"
+              class="w-full max-w-[340px] lg:max-w-none h-auto object-contain"
+            />
+          </div>
+
+          <!-- Colonna 3: Contatti -->
+          <div class="order-2 lg:order-3">
             <div
               class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 backdrop-blur-sm"
             >
@@ -170,6 +183,7 @@
               >
                 Quick Info
               </p>
+
               <div class="space-y-4 text-sm">
                 <div>
                   <div
@@ -177,30 +191,37 @@
                   >
                     Phone
                   </div>
+
                   <a
                     href="tel:+436605744418"
-                    class="text-white hover:text-white/75"
-                    >+43 660 57 44 418</a
+                    class="text-white hover:text-white/75 transition"
                   >
+                    +43 660 57 44 418
+                  </a>
                 </div>
+
                 <div>
                   <div
                     class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
                   >
                     Email
                   </div>
+
                   <a
-                    href="mailto:ciao@casepizzeria.it"
-                    class="text-white hover:text-white/75"
-                    >ciao@case-pizza.at</a
+                    href="mailto:ciao@case-pizza.at"
+                    class="text-white hover:text-white/75 transition"
                   >
+                    ciao@case-pizza.at
+                  </a>
                 </div>
+
                 <div>
                   <div
                     class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
                   >
                     Address
                   </div>
+
                   <p class="text-white/85">Rokitanskygasse 11, 1170 Wien</p>
                 </div>
               </div>
@@ -285,7 +306,8 @@
               See You Soon
             </h2>
             <p class="text-ink/60 text-sm leading-relaxed mb-5">
-              We are open Monday through Sunday for lunch and dinner. We're closed on Wednesdays.
+              We are open Monday through Sunday for lunch and dinner. We're
+              closed on Wednesdays.
             </p>
             <p class="text-ink/80 text-sm">
               Mon–Sun: 12:00–22:00 · Closed on Wednesdays.
@@ -335,7 +357,9 @@
                 >
                   Hours
                 </div>
-                <p class="text-white/90">Mon-Sun: 12:00–22:00 · Closed on Wednesdays.</p>
+                <p class="text-white/90">
+                  Mon-Sun: 12:00–22:00 · Closed on Wednesdays.
+                </p>
               </div>
 
               <div class="border-t border-white/10 pt-4">
@@ -411,7 +435,7 @@
             </p>
             <div class="flex gap-2 mt-5">
               <a
-                href="#"
+                href="https://www.instagram.com/casepizzeria/"
                 class="social-btn"
                 aria-label="Instagram"
                 target="_blank"
