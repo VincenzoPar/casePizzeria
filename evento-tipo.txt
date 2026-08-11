@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "titolo": "Neapolitan Pizza Night",
+    "data": "2026-06-14",
+    "orario": "20:00",
+    "descrizione": "A night dedicated to true Neapolitan pizza with long-fermented dough and a wood-fired oven.",
+    "descrizione-lunga": "A special evening for pizza lovers, where you can enjoy authentic Neapolitan pizza made with high-quality ingredients and baked in a wood-fired oven. During the event, our expert pizzaiolo will guide you through the long-fermentation dough process and share the secrets behind a perfect pizza. Don’t miss this unique opportunity to experience Italian culinary tradition in a warm and festive atmosphere.",
+    "img": "assets/eventi/pizza-napoletana.jpg",
+    "tag": "special"
+  }

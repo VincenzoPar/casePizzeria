@@ -1,52 +1,12 @@
 [
   {
     "id": 1,
-    "titolo": "Neapolitan Pizza Night",
-    "data": "2026-06-14",
-    "orario": "20:00",
-    "descrizione": "A night dedicated to true Neapolitan pizza with long-fermented dough and a wood-fired oven.",
-    "descrizione-lunga": "A special evening for pizza lovers, where you can enjoy authentic Neapolitan pizza made with high-quality ingredients and baked in a wood-fired oven. During the event, our expert pizzaiolo will guide you through the long-fermentation dough process and share the secrets behind a perfect pizza. Don’t miss this unique opportunity to experience Italian culinary tradition in a warm and festive atmosphere.",
+    "titolo": "FERRAGOSTO IN VIENNA!",
+    "data": "2026-08-15",
+    "orario": "12:00 - 22:00",
+    "descrizione": "Celebrate Ferragosto, one of Italy’s most beloved summer traditions, with us! ☀️",
+    "descrizione-lunga" : "Join us for a special evening of aperitivo, authentic Italian pizza, and good vibes. 🍹🍕 What is Ferragosto? Ferragosto is Italy’s traditional August 15th celebration — a day dedicated to summer, holidays, good food, and spending time together. 🇮🇹❤️ Come enjoy a little taste of Italian summer in Vienna!",
     "img": "assets/eventi/pizza-napoletana.jpg",
     "tag": "special"
-  },
-  {
-    "id": 2,
-    "titolo": "Wine & Pizza Pairing Night",
-    "data": "2026-06-21",
-    "orario": "20:30",
-    "descrizione": "An elegant evening of pizza and wine pairings selected to enhance every flavor.",
-    "descrizione-lunga": "Join us for a refined tasting experience where artisan pizzas meet carefully selected Italian wines. Each course will be paired to highlight the character of the dough, the toppings, and the balance between aroma and taste. Our team will introduce every pairing and explain why each wine brings out the best in the matching pizza.",
-    "img": "assets/eventi/wine-pizza-pairing.jpg",
-    "tag": "tasting"
-  },
-  {
-    "id": 3,
-    "titolo": "Live Music Saturday",
-    "data": "2026-07-05",
-    "orario": "21:00",
-    "descrizione": "Live acoustic music, great pizza, and a relaxed atmosphere for your Saturday night.",
-    "descrizione-lunga": "Spend your Saturday evening at CASÈ with live acoustic performances, fresh pizza from the oven, and a cozy atmosphere made for sharing. The event is designed to create the perfect mix of music, food, and conviviality, making it an ideal night out with friends, family, or someone special.",
-    "img": "assets/eventi/live-music-saturday.jpg",
-    "tag": "music"
-  },
-  {
-    "id": 4,
-    "titolo": "Kids Pizza Workshop",
-    "data": "2026-07-12",
-    "orario": "18:00",
-    "descrizione": "A fun workshop where children can make their own pizza with the help of our staff.",
-    "descrizione-lunga": "This family-friendly workshop is designed to let children discover the joy of making pizza from scratch. With the support of our staff, they will learn how to stretch the dough, choose toppings, and watch their creation bake in the oven. It’s a playful and educational experience that brings families together around the table.",
-    "img": "assets/eventi/kids-pizza-workshop.jpg",
-    "tag": "family"
-  },
-  {
-    "id": 5,
-    "titolo": "Summer Tasting Menu",
-    "data": "2026-07-26",
-    "orario": "20:00",
-    "descrizione": "A seasonal tasting menu featuring summer ingredients, signature pizzas, and desserts.",
-    "descrizione-lunga": "Celebrate the flavors of summer with a curated tasting menu that highlights seasonal ingredients, signature pizzas, and a selection of desserts. Each dish is designed to showcase freshness, balance, and the craftsmanship behind our kitchen. This event is perfect for guests who want to discover a broader side of the CASÈ experience.",
-    "img": "assets/eventi/summer-tasting-menu.jpg",
-    "tag": "seasonal"
   }
 ]

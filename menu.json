@@ -21,7 +21,7 @@
           "descrizione": "Stracciatella, red and yellow cherry tomatoes, anchovy fillets, and oregano-infused olive oil.",
           "prezzo": 10.50,
           "tag": ["to share"],
-          "allergeni": ["fish", "milk"]
+          "allergeni": ["fish", "milk", "gluten"]
         },
         {
           "id": "a3",
@@ -37,7 +37,7 @@
           "descrizione": "Mixed leaf salad, red and yellow cherry tomatoes, fresh carrots, olive crumble and pine nuts. + tuna € 3,50",
           "prezzo": 6.80,
           "tag": ["to share", "vegetarian"],
-          "allergeni": ["gluten", "nuts"]
+          "allergeni": ["gluten", "nuts", "fish"]
         }
       ]
     },
@@ -153,9 +153,9 @@
         {
           "id": "i7",
           "nome": "La Reggia di CASÈ",
-          "descrizione": "Parmesan cream made from 24-month-aged Parmesan, Fior di Latte and smoked Provola. After baking: Caciocavallo (traditional Southern Italian cow’s milk cheese), olive crumble from Caiazzo (Slow Food Presidio). 'Homage to the gardens, beauty and elegance of the Royal Palace of Caserta (Reggia di Caserta).'",
+          "descrizione": "Parmesan cream made from 24-month-aged Parmesan, Fior di Latte and smoked Provola. After baking: Prosciutto crudo, Caciocavallo (traditional Southern Italian cow’s milk cheese), olive crumble from Caiazzo (Slow Food Presidio). 'Homage to the gardens, beauty and elegance of the Royal Palace of Caserta (Reggia di Caserta).'",
           "prezzo": 18.50,
-          "tag": ["signature", "vegetarian"],
+          "tag": ["signature"],
           "allergeni": ["gluten", "milk"]
         }
       ]
@@ -175,7 +175,8 @@
               "descrizione": "",
               "formato": "glass",
               "prezzo": 5.50,
-              "tag": ["white"]
+              "tag": ["white"],
+              "allergeni": ["sulfites"]
             },
             {
               "id": "v2",
@@ -183,7 +184,8 @@
               "descrizione": "",
               "formato": "glass",
               "prezzo": 6.50,
-              "tag": ["red"]
+              "tag": ["red"],
+              "allergeni": ["sulfites"]
             },
             {
               "id": "v3",
@@ -191,7 +193,8 @@
               "descrizione": "Fine bubbles, white fruit, clean finish.",
               "formato": "glass",
               "prezzo": 6.50,
-              "tag": ["white", "sparkling"]
+              "tag": ["white", "sparkling"],
+              "allergeni": ["sulfites"]
             }
           ]
         },
@@ -299,6 +302,13 @@
           "id": "analcoliche",
           "label": "Soft Drinks & Coffee",
           "items": [
+            {
+              "id": "an0",
+              "nome": "Espresso",
+              "prezzo": 2,
+              "formato": "cup",
+              "tag": []
+            },
             {
               "id": "an1",
               "nome": "Soda",
@@ -425,11 +435,6 @@
           "id": "e4",
           "nome": "Chilly",
           "prezzo": 0.50
-        },
-        {
-          "id": "e5",
-          "nome": "Potatoes",
-          "prezzo": 1.20
         },
         {
           "id": "e6",
