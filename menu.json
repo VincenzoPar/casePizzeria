@@ -179,6 +179,15 @@
               "allergeni": ["sulfites"]
             },
             {
+              "id": "v4",
+              "nome": "Bianco Falanghina",
+              "descrizione": "",
+              "formato": "flask",
+              "prezzo": 29,
+              "tag": ["white"],
+              "allergeni": ["sulfites"]
+            },
+            {
               "id": "v2",
               "nome": "Rosso Aglianico",
               "descrizione": "",
@@ -188,11 +197,29 @@
               "allergeni": ["sulfites"]
             },
             {
+              "id": "v5",
+              "nome": "Rosso Aglianico",
+              "descrizione": "",
+              "formato": "flask",
+              "prezzo": 35,
+              "tag": ["red"],
+              "allergeni": ["sulfites"]
+            },
+            {
               "id": "v3",
               "nome": "Prosecco della casa",
               "descrizione": "Fine bubbles, white fruit, clean finish.",
               "formato": "glass",
               "prezzo": 6.50,
+              "tag": ["white", "sparkling"],
+              "allergeni": ["sulfites"]
+            },
+            {
+              "id": "v6",
+              "nome": "Prosecco della casa",
+              "descrizione": "Fine bubbles, white fruit, clean finish.",
+              "formato": "flask",
+              "prezzo": 35,
               "tag": ["white", "sparkling"],
               "allergeni": ["sulfites"]
             }
@@ -207,7 +234,7 @@
               "nome": "Moretti",
               "descrizione": "Classic Italian lager, light, crisp, and easy to drink.",
               "formato": "33cl",
-              "prezzo": 4.90,
+              "prezzo": 4.50,
               "tag": ["lager"]
             },
             {
@@ -215,7 +242,7 @@
               "nome": "Ichnusa Non Filtrata",
               "descrizione": "Unfiltered Italian lager with a naturally cloudy appearance and a rich, smooth taste.",
               "formato": "33cl",
-              "prezzo": 4.90,
+              "prezzo": 5.50,
               "tag": ["unfiltered", "lager"]
             },
             {
@@ -223,7 +250,7 @@
               "nome": "Theresianer Premium Lager",
               "descrizione": "Elegant golden lager with a balanced malt character and delicate hop aroma.",
               "formato": "33cl",
-              "prezzo": 4.90,
+              "prezzo": 4.50,
               "tag": ["premium", "lager"]
             },
             {
@@ -231,8 +258,16 @@
               "nome": "Theresianen Pils",
               "descrizione": "Refreshing pilsner with a clean, crisp taste and pleasant hoppy bitterness.",
               "formato": "33cl",
-              "prezzo": 4.90,
+              "prezzo": 4.50,
               "tag": ["pils"]
+            },
+            {
+              "id": "b5",
+              "nome": "Peroni 0%",
+              "descrizione": "",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["non-alcoholic"]
             }
           ]
         },
@@ -244,14 +279,14 @@
               "id": "c1",
               "nome": "Americano",
               "descrizione": "",
-              "prezzo": 8.50,
+              "prezzo": 8.20,
               "tag": []
             },
             {
               "id": "c2",
               "nome": "Negroni Sbagliato",
               "descrizione": "",
-              "prezzo": 9.00,
+              "prezzo": 9.50,
               "tag": []
             },
             {
@@ -272,7 +307,7 @@
               "id": "c5",
               "nome": "Limoncello Sour",
               "descrizione": "",
-              "prezzo": 10.50,
+              "prezzo": 9.50,
               "tag": []
             },
             {
@@ -311,9 +346,16 @@
             },
             {
               "id": "an1",
-              "nome": "Soda",
-              "prezzo": 1.9,
+              "nome": "Soda 0,25l",
+              "prezzo": 1.90,
               "formato": "25cl",
+              "tag": []
+            },
+            {
+              "id": "an7",
+              "nome": "Soda 0,50l",
+              "prezzo": 3.50,
+              "formato": "50cl",
               "tag": []
             },
             {
@@ -326,27 +368,45 @@
             },
             {
               "id": "an3",
-              "nome": "Lemon Soda",
+              "nome": "Lemon Soda 0,25l",
               "descrizione": "",
-              "prezzo": 2.60,
+              "prezzo": 2.50,
               "formato": "25cl",
               "tag": []
             },
             {
+              "id": "an7",
+              "nome": "Lemon Soda 0,50l",
+              "descrizione": "",
+              "prezzo": 4.20,
+              "formato": "50cl",
+              "tag": []
+            },
+            {
               "id": "an4",
-              "nome": "Jasmine Soda",
-              "prezzo": 2.60,
+              "nome": "Jasmine Soda 0,25l",
+              "formato": "25cl",
+              "prezzo": 2.50,
+              "tag": []
+            },
+            {
+              "id": "an4",
+              "nome": "Jasmine Soda 0,50l",
+              "formato": "50cl",
+              "prezzo": 4.20,
               "tag": []
             },
             {
               "id": "an5",
               "nome": "Chinotto J. Gasko",
+              "formato": "20cl",
               "prezzo": 3.90,
               "tag": []
             },
             {
               "id": "an6",
               "nome": "Fior di Sambuco J. Gasko",
+              "formato": "20cl",
               "prezzo": 3.90,
               "tag": []
             }
@@ -363,7 +423,7 @@
           "id": "s1",
           "descrizione": "Homemade basil syrup, prosecco, soda.",
           "nome": "CASè Spritz",
-          "prezzo": 8.20
+          "prezzo": 7.90
         },
         {
           "id": "s2",
@@ -378,7 +438,7 @@
         {
           "id": "s4",
           "nome": "Limoncello Spritz",
-          "prezzo": 7.20
+          "prezzo": 7.50
         },
         {
           "id": "s5",
@@ -405,7 +465,7 @@
         },
         {
           "id": "na2",
-          "nome": "Jasmine Spritz",
+          "nome": "Jasmine Tonic",
           "descrizione": "Homemade jasmine syrup, tonic water.",
           "prezzo": 5.90
         }
