@@ -1,0 +1,380 @@
+{
+  "ristorante": "CASÈ Pizzeria",
+  "version": "2026",
+  "sezioni": [
+    {
+      "id": "antipasti",
+      "label": "Vorspeisen",
+      "labelEn": "Vorspeisen",
+      "items": [
+        {
+          "id": "a1",
+          "nome": "Grüne Oliven",
+          "descrizione": "Grüne Oliven, mit Zitronenzesten verfeinert.",
+          "prezzo": 4.90,
+          "tag": ["vegan", "zum Teilen"],
+          "allergeni": []
+        },
+        {
+          "id": "a2",
+          "nome": "Bruschette (2 Stk.)",
+          "descrizione": "Stracciatella, rote und gelbe Kirschtomaten, Sardellenfilets und mit Oregano aromatisiertes Olivenöl.",
+          "prezzo": 10.50,
+          "tag": ["zum Teilen"],
+          "allergeni": ["Fisch", "Milch", "Gluten"]
+        },
+        {
+          "id": "a3",
+          "nome": "U' Rutiell (ital. Il Ruotiello)",
+          "descrizione": "Traditionell in der runden Pfanne gebackene Pizza, mit Tomatensauce und mit Oregano aromatisiertem Olivenöl belegt – weich und luftig in der Mitte, mit knusprigem Rand.",
+          "prezzo": 7.20,
+          "tag": ["zum Teilen", "vegan"],
+          "allergeni": ["Gluten"]
+        },
+        {
+          "id": "a4",
+          "nome": "Salat",
+          "descrizione": "Gemischter Blattsalat, rote und gelbe Kirschtomaten, frische Karotten, Olivenstreusel und Pinienkerne. + Thunfisch € 3,50",
+          "prezzo": 6.80,
+          "tag": ["zum Teilen", "vegetarisch"],
+          "allergeni": ["Gluten", "Nüsse", "Fisch"]
+        }
+      ]
+    },
+    {
+      "id": "classiche",
+      "label": "Casè's Klassiker",
+      "labelEn": "Casè's Klassiker",
+      "items": [
+        {
+          "id": "p1",
+          "nome": "Margherita",
+          "immagine": "./assets/eventi/pizza-napoletana.jpg",
+          "descrizione": "San Marzano DOP Tomatensauce, Fior di Latte, 24 Monate gereifter Grana Padano, Basilikum.",
+          "prezzo": 10.00,
+          "tag": ["Klassiker", "vegetarisch"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "p2",
+          "nome": "Marinara",
+          "descrizione": "San Marzano DOP Tomatensauce, frischer Knoblauch, Basilikum, mit Oregano aromatisiertes Olivenöl.",
+          "prezzo": 9.20,
+          "tag": ["vegan", "Klassiker"],
+          "allergeni": ["Gluten"]
+        },
+        {
+          "id": "p3",
+          "nome": "Bufala",
+          "descrizione": "Langsam gekochte San Marzano DOP Tomatensauce, kampanischer Büffelmozzarella, Pecorino Romano DOP, Basilikum.",
+          "prezzo": 14.50,
+          "tag": ["Klassiker", "vegetarisch"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "p4",
+          "nome": "Prosciutto Cotto",
+          "descrizione": "San Marzano DOP Tomatensauce, gekochter Schinken, 24 Monate gereifter Grana Padano, Caciocavallo (traditioneller süditalienischer Kuhmilchkäse), Basilikum.",
+          "prezzo": 13.80,
+          "tag": ["Klassiker"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "p5",
+          "nome": "Provola e Pepe",
+          "descrizione": "Langsam gekochte San Marzano DOP Tomatensauce, kampanischer Büffelmozzarella, geräucherte Provola, schwarzer Pfeffer, Basilikum.",
+          "prezzo": 14.20,
+          "tag": ["Klassiker", "scharf"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "p6",
+          "nome": "Diavola",
+          "descrizione": "San Marzano DOP Tomatensauce, Fior di Latte, scharfe Salami, Pecorino Romano DOP, Basilikum.",
+          "prezzo": 13.50,
+          "tag": ["Klassiker", "scharf"],
+          "allergeni": ["Gluten", "Milch"]
+        }
+      ]
+    },
+    {
+      "id": "signature",
+      "label": "Casè's Signature-Pizzen",
+      "labelEn": "Casè's Signature-Pizzen",
+      "items": [
+        {
+          "id": "i1",
+          "nome": "Capricciò",
+          "descrizione": "Artischockencreme, gekochter Schinken, Champignons, milde Salami, marinierte Artischocken, Olivenstreusel aus Caiazzo (Slow Food Presidio).",
+          "prezzo": 15.50,
+          "tag": ["Signature"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "i2",
+          "nome": "Ri Mari (ital. Del Mare)",
+          "descrizione": "Gelbe DOP Tomatensauce, Kapern von Salina. Nach dem Backen: apulische Stracciatella, Sardellenfilets, confierte Kirschtomaten, mit Oregano aromatisiertes Olivenöl, schwarze Knoblauch-Mayonnaise.",
+          "prezzo": 16.80,
+          "tag": ["Signature"],
+          "allergeni": ["Gluten", "Milch", "Fisch", "Eier"]
+        },
+        {
+          "id": "i3",
+          "nome": "Formaggiosa",
+          "descrizione": "Parmesancreme aus 24 Monate gereiftem Parmesan, Fior di Latte, geräucherte Provola, Gorgonzola, Caciocavallo (traditioneller süditalienischer Kuhmilchkäse). Nach dem Backen: Karotten-Honig-Creme, Basilikum. „Hommage an einen lieben Kindheitsfreund“",
+          "prezzo": 17.50,
+          "tag": ["Signature", "vegetarisch"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "i4",
+          "nome": "Tonno e Monti",
+          "descrizione": "Fior di Latte, Thunfischfilets, Zwiebeln aus Alife. Nach dem Backen: rote und gelbe confierte Kirschtomaten, Olivenstreusel aus Caiazzo (Slow Food Presidio), knusprige Spitzpaprika.",
+          "prezzo": 16.50,
+          "tag": ["Signature"],
+          "allergeni": ["Gluten", "Milch", "Fisch"]
+        },
+        {
+          "id": "i5",
+          "nome": "Vanvitelliana",
+          "descrizione": "Gelbe DOP Tomatensauce, Fior di Latte, Pecorino Romano DOP. Nach dem Backen: Wurst vom Casertana-Schwarzschwein, Olivenstreusel aus Caiazzo (Slow Food Presidio), Basilikum.",
+          "prezzo": 17.80,
+          "tag": ["Signature"],
+          "allergeni": ["Gluten", "Milch"]
+        },
+        {
+          "id": "i6",
+          "nome": "Carciofella",
+          "descrizione": "Gelbe DOP Tomatensauce, ofengeröstete Karotten, marinierte Artischocken. Nach dem Backen: Artischockencreme, Rucola-Pesto, Olivenpaste, Pinienkerne.",
+          "prezzo": 15.20,
+          "tag": ["Signature", "vegetarisch"],
+          "allergeni": ["Gluten", "Milch", "Nüsse"]
+        },
+        {
+          "id": "i7",
+          "nome": "La Reggia di CASÈ",
+          "descrizione": "Parmesancreme aus 24 Monate gereiftem Parmesan, Fior di Latte und geräucherte Provola. Nach dem Backen: Prosciutto crudo, Caciocavallo (traditioneller süditalienischer Kuhmilchkäse), Olivenstreusel aus Caiazzo (Slow Food Presidio). „Hommage an die Gärten, die Schönheit und die Eleganz des Königspalasts von Caserta (Reggia di Caserta).“",
+          "prezzo": 18.50,
+          "tag": ["Signature"],
+          "allergeni": ["Gluten", "Milch"]
+        }
+      ]
+    },
+    {
+      "id": "bevande",
+      "label": "Getränke",
+      "labelEn": "Getränke",
+      "sottosezioni": [
+        {
+          "id": "vini",
+          "label": "Weine",
+          "items": [
+            {
+              "id": "v1",
+              "nome": "Bianco Falanghina",
+              "descrizione": "",
+              "formato": "Glas",
+              "prezzo": 5.50,
+              "tag": ["weiß"],
+              "allergeni": ["Sulfite"]
+            },
+            {
+              "id": "v4",
+              "nome": "Bianco Falanghina",
+              "descrizione": "",
+              "formato": "Karaffe",
+              "prezzo": 29,
+              "tag": ["weiß"],
+              "allergeni": ["Sulfite"]
+            },
+            {
+              "id": "v2",
+              "nome": "Rosso Aglianico",
+              "descrizione": "",
+              "formato": "Glas",
+              "prezzo": 6.50,
+              "tag": ["rot"],
+              "allergeni": ["Sulfite"]
+            },
+            {
+              "id": "v5",
+              "nome": "Rosso Aglianico",
+              "descrizione": "",
+              "formato": "Karaffe",
+              "prezzo": 35,
+              "tag": ["rot"],
+              "allergeni": ["Sulfite"]
+            },
+            {
+              "id": "v3",
+              "nome": "Prosecco della casa",
+              "descrizione": "Feine Perlage, weißes Obst, sauberer Abgang.",
+              "formato": "Glas",
+              "prezzo": 6.50,
+              "tag": ["weiß", "prickelnd"],
+              "allergeni": ["Sulfite"]
+            },
+            {
+              "id": "v6",
+              "nome": "Prosecco della casa",
+              "descrizione": "Feine Perlage, weißes Obst, sauberer Abgang.",
+              "formato": "Karaffe",
+              "prezzo": 35,
+              "tag": ["weiß", "prickelnd"],
+              "allergeni": ["Sulfite"]
+            }
+          ]
+        },
+        {
+          "id": "birre",
+          "label": "Biere",
+          "items": [
+            {
+              "id": "b1",
+              "nome": "Moretti",
+              "descrizione": "Klassisches italienisches Lagerbier, leicht, spritzig und leicht zu trinken.",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["Lager"]
+            },
+            {
+              "id": "b2",
+              "nome": "Ichnusa Non Filtrata",
+              "descrizione": "Ungefiltertes italienisches Lagerbier mit natürlich trübem Erscheinungsbild und vollem, weichem Geschmack.",
+              "formato": "33cl",
+              "prezzo": 5.50,
+              "tag": ["ungefiltert", "Lager"]
+            },
+            {
+              "id": "b3",
+              "nome": "Theresianer Premium Lager",
+              "descrizione": "Elegantes goldenes Lagerbier mit ausgewogenem Malzcharakter und zartem Hopfenaroma.",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["Premium", "Lager"]
+            },
+            {
+              "id": "b4",
+              "nome": "Theresianen Pils",
+              "descrizione": "Erfrischendes Pils mit klarem, spritzigem Geschmack und angenehmer Hopfenbitterkeit.",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["Pils"]
+            },
+            {
+              "id": "b5",
+              "nome": "Peroni 0%",
+              "descrizione": "",
+              "formato": "33cl",
+              "prezzo": 4.50,
+              "tag": ["alkoholfrei"]
+            }
+          ]
+        },
+        {
+          "id": "cocktails",
+          "label": "Cocktails & Aperitifs",
+          "items": [
+            { "id": "c1", "nome": "Americano", "descrizione": "", "prezzo": 8.20, "tag": [] },
+            { "id": "c2", "nome": "Negroni Sbagliato", "descrizione": "", "prezzo": 9.50, "tag": [] },
+            { "id": "c3", "nome": "Negroni Classico", "descrizione": "", "prezzo": 10.50, "tag": [] },
+            { "id": "c4", "nome": "Aperol Sour", "descrizione": "", "prezzo": 9.50, "tag": [] },
+            { "id": "c5", "nome": "Limoncello Sour", "descrizione": "", "prezzo": 9.50, "tag": [] },
+            { "id": "c6", "nome": "Averna Sour", "descrizione": "", "prezzo": 9.50, "tag": [] },
+            { "id": "c7", "nome": "Fiori di Sambuco & Vodka", "descrizione": "", "prezzo": 8.20, "tag": [] },
+            { "id": "c8", "nome": "Gin Al Chinotto", "descrizione": "", "prezzo": 8.20, "tag": [] }
+          ]
+        },
+        {
+          "id": "analcoliche",
+          "label": "Softdrinks & Kaffee",
+          "items": [
+            { "id": "an0", "nome": "Espresso", "prezzo": 2, "formato": "Tasse", "tag": [] },
+            { "id": "an1", "nome": "Soda 0,25l", "prezzo": 1.90, "formato": "25cl", "tag": [] },
+            { "id": "an7", "nome": "Soda 0,50l", "prezzo": 3.50, "formato": "50cl", "tag": [] },
+            {
+              "id": "an2",
+              "nome": "Softdrinks",
+              "descrizione": "Coca-Cola, Coca-Cola Zero, Fanta, Sprite, Ice Tea",
+              "prezzo": 3.90,
+              "formato": "33cl",
+              "tag": []
+            },
+            { "id": "an3", "nome": "Lemon Soda 0,25l", "descrizione": "", "prezzo": 2.50, "formato": "25cl", "tag": [] },
+            { "id": "an7", "nome": "Lemon Soda 0,50l", "descrizione": "", "prezzo": 4.20, "formato": "50cl", "tag": [] },
+            { "id": "an4", "nome": "Jasmine Soda 0,25l", "formato": "25cl", "prezzo": 2.50, "tag": [] },
+            { "id": "an4", "nome": "Jasmine Soda 0,50l", "formato": "50cl", "prezzo": 4.20, "tag": [] },
+            { "id": "an5", "nome": "Chinotto J. Gasko", "formato": "20cl", "prezzo": 3.90, "tag": [] },
+            { "id": "an6", "nome": "Fior di Sambuco J. Gasko", "formato": "20cl", "prezzo": 3.90, "tag": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spritz",
+      "label": "Spritz",
+      "labelEn": "Spritz",
+      "items": [
+        {
+          "id": "s1",
+          "descrizione": "Hausgemachter Basilikumsirup, Prosecco, Soda.",
+          "nome": "CASè Spritz",
+          "prezzo": 7.90
+        },
+        { "id": "s2", "nome": "Aperol Spritz", "prezzo": 7.50 },
+        { "id": "s3", "nome": "Campari Spritz", "prezzo": 7.90 },
+        { "id": "s4", "nome": "Limoncello Spritz", "prezzo": 7.50 },
+        { "id": "s5", "nome": "Campari Soda", "prezzo": 6.90 },
+        { "id": "s6", "nome": "Averna Soda", "prezzo": 6.90 }
+      ]
+    },
+    {
+      "id": "non-alcoholic-spritz",
+      "label": "Alkoholfreier Spritz",
+      "labelEn": "Alkoholfreier Spritz",
+      "items": [
+        {
+          "id": "na1",
+          "nome": "Giuli Spritz",
+          "descrizione": "Hausgemachter Zitronengras- und Schmetterlingsblüten-Sirup, Sodarosa J. Gasco, Zitrone.",
+          "prezzo": 6.80
+        },
+        {
+          "id": "na2",
+          "nome": "Jasmine Tonic",
+          "descrizione": "Hausgemachter Jasminsirup, Tonic Water.",
+          "prezzo": 5.90
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "label": "Extras",
+      "labelEn": "Extras",
+      "items": [
+        { "id": "e1", "nome": "Mais", "prezzo": 0.50 },
+        { "id": "e2", "nome": "Frische Champignons", "prezzo": 1.30 },
+        { "id": "e3", "nome": "Knoblauch", "prezzo": 0.50 },
+        { "id": "e4", "nome": "Chili", "prezzo": 0.50 },
+        { "id": "e6", "nome": "Schwarze Oliven", "prezzo": 2.20 },
+        { "id": "e7", "nome": "Artischocken", "prezzo": 2.00 },
+        { "id": "e8", "nome": "Zwiebeln", "prezzo": 1.00 },
+        { "id": "e9", "nome": "Kapern", "prezzo": 1.00 },
+        { "id": "e10", "nome": "Rote und gelbe Kirschtomaten", "prezzo": 2.50 },
+        { "id": "e11", "nome": "Grana Padano", "prezzo": 1.50 },
+        { "id": "e12", "nome": "Pecorino", "prezzo": 1.50 },
+        { "id": "e13", "nome": "Gorgonzola", "prezzo": 1.50 },
+        { "id": "e14", "nome": "Büffelmozzarella", "prezzo": 3.00 },
+        { "id": "e15", "nome": "Mozzarella", "prezzo": 2.00 },
+        { "id": "e16", "nome": "Provola", "prezzo": 2.20 },
+        { "id": "e17", "nome": "Gekochter Schinken", "prezzo": 2.50 },
+        { "id": "e18", "nome": "Milde Salami", "prezzo": 2.30 },
+        { "id": "e19", "nome": "Scharfe Salami", "prezzo": 2.20 },
+        { "id": "e20", "nome": "Thunfisch", "prezzo": 3.20 },
+        { "id": "e21", "nome": "Sardellen", "prezzo": 3.50 },
+        { "id": "e22", "nome": "Wurst", "prezzo": 2.60 },
+        { "id": "e23", "nome": "Schinken", "prezzo": 2.50 }
+      ]
+    }
+  ]
+}

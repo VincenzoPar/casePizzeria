@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Veranstaltungen bei CASÈ, handwerkliche Pizzeria in Wien - Besondere Abende, Verkostungen und Termine, die man in der Pizzeria erleben kann."
+    />
+    <link rel="icon" type="image/png" href="assets/logoNeroCase.svg" />
+    <title>CASÈ — Veranstaltungen</title>
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              linen: "#F0EAE0",
+              ink: "#07090A",
+              spruce: "#29411E",
+              red: "#C4272A",
+              offwhite: "#FAFAF7",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "sans-serif"],
+              body: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+
+  <body class="bg-linen text-ink">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="index-de.html">
+            <img
+              src="./assets/logoBiancoCase.png"
+              alt="CASÈ Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16"
+            />
+          </a>
+
+
+          <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li>
+              <a
+                href="index-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Startseite</a
+              >
+            </li>
+            <li>
+              <a
+                href="chi-siamo-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Über uns</a
+              >
+            </li>
+            <li>
+              <a href="eventi-de.html" class="nav-link active text-white"
+                >Veranstaltungen</a
+              >
+            </li>
+            <li>
+              <a
+                href="contatti-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+
+
+          <span></span>
+
+
+          <button
+            id="hamburger"
+            class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-spruce border-t border-white/10"
+      >
+        <ul
+          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0"
+        >
+          <li>
+            <a
+              href="index-de.html"
+              class="block text-white py-3 text-sm border-b border-white/10 no-underline"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="chi-siamo-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Über uns</a
+            >
+          </li>
+          <li>
+            <a
+              href="eventi-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Veranstaltungen</a
+            >
+          </li>
+          <li>
+            <a
+              href="contatti-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm no-underline transition-colors"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="pt-16 bg-linen text-ink relative">
+      <!-- SVG in alto a destra, sotto la navbar -->
+      <img
+        src="assets/imgChiara/pomodori-2.svg"
+        alt="Dekoration"
+        class="absolute top-24 md:top-32 right-6 w-32 h-auto md:w-[25%] md:h-auto z-10 pointer-events-none rotate-45"
+      />
+      <section class="px-6 py-16 md:py-20">
+        <div class="max-w-6xl mx-auto">
+          <div class="max-w-2xl mb-10 md:mb-14">
+            <p
+              class="text-red text-xs tracking-[0.2em] uppercase font-semibold mb-3"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Veranstaltungen
+            </p>
+            <h1
+              class="text-4xl md:text-6xl uppercase leading-none text-spruce"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Kommende Veranstaltungen
+            </h1>
+            <p class="text-ink/60 text-sm md:text-base mt-4 max-w-xl">
+              Besondere Abende, Verkostungen und Events, die man in der
+              Pizzeria erleben kann.
+            </p>
+          </div>
+
+
+          <div
+            id="events-container"
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6"
+          >
+            <div class="text-ink/50 text-sm">Veranstaltungen werden geladen...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-spruce text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <img
+                src="./assets/logoCase.svg"
+                alt="CASÈ Logo"
+                width="150"
+                height="100"
+              />
+            </div>
+            <p class="text-white/55 text-sm leading-relaxed max-w-xs">
+              Mehr als nur eine Pizzeria — eine gemütliche Ecke, um zur Ruhe zu
+              kommen und sich zu entspannen.
+            </p>
+            <div class="flex gap-2 mt-5">
+              <a
+                href="https://www.instagram.com/casepizzeria/"
+                class="social-btn"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Navigation
+            </p>
+            <ul class="flex flex-col gap-2 list-none p-0 m-0">
+              <li><a href="index-de.html" class="footer-link">Startseite</a></li>
+              <li><a href="chi-siamo-de.html" class="footer-link">Über uns</a></li>
+              <li><a href="eventi-de.html" class="footer-link">Veranstaltungen</a></li>
+              <li><a href="contatti-de.html" class="footer-link">Kontakt</a></li>
+            </ul>
+          </div>
+
+
+          <!-- Contacts -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Wo wir sind
+            </p>
+            <div class="flex flex-col gap-2">
+              <span class="footer-link">Rokitanskygasse 11, 1170 Wien</span>
+              <a href="tel:+436605744418" class="footer-link"
+                >+43 660 57 44 418</a
+              >
+              <a href="mailto:ciao@case-pizza.at" class="footer-link"
+                >ciao@case-pizza.at</a
+              >
+              <span class="text-white/35 text-xs mt-1"
+                >Mo–So: 12:00–22:00 · Mittwoch Ruhetag</span
+              >
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
+        >
+          <p class="text-white/30 text-xs">
+            © 2026 CASÈ Pizzeria. Alle Rechte vorbehalten.
+          </p>
+          <p class="text-white/30 text-xs">USt-IdNr. ATU83460559</p>
+          <p class="text-white/30 text-xs">
+            Powered by
+            <img
+              src="assets/logoC3W.jpeg"
+              alt="logo C3W"
+              width="35"
+              height="35"
+            />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- MODAL -->
+    <div
+      id="event-modal"
+      class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/70 px-4"
+      aria-hidden="true"
+    >
+      <div
+        class="bg-offwhite max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl border border-black/10"
+      >
+        <div
+          class="flex items-center justify-between px-5 py-4 border-b border-black/10"
+        >
+          <h2
+            id="modal-title"
+            class="text-spruce uppercase leading-none"
+            style="
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-size: 2rem;
+              font-weight: 700;
+            "
+          >
+            Veranstaltung
+          </h2>
+          <button
+            id="close-modal"
+            class="text-ink/60 hover:text-ink text-sm uppercase tracking-[0.16em] font-semibold"
+            type="button"
+          >
+            Schließen
+          </button>
+        </div>
+
+
+        <div class="p-5 md:p-6">
+          <div class="aspect-[16/9] bg-black/5 rounded-xl mb-5 overflow-hidden">
+            <img
+              id="modal-image"
+              src=""
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <p
+            id="modal-short"
+            class="text-ink/65 text-sm leading-relaxed mb-4"
+          ></p>
+          <p id="modal-long" class="text-ink/80 text-sm leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+     LANGUAGE SWITCHER
+═══════════════════════════════════════ -->
+    <div class="fixed bottom-6 left-6 z-50" id="lang-switcher">
+      <button
+        id="lang-btn"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-ink/10 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
+        aria-label="Sprache ändern"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <!-- DE flag -->
+        <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
+      </button>
+
+      <!-- Dropdown -->
+      <div
+        id="lang-dropdown"
+        class="hidden absolute bottom-16 left-0 bg-white rounded-md shadow-lg border border-ink/10 py-2 min-w-[150px]"
+      >
+        <button
+          type="button"
+          class="w-full flex items-center gap-3 px-4 py-2 text-sm text-ink hover:bg-linen transition-colors"
+        >
+          <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+          <a href="eventi.html"> English </a>
+        </button>
+      </div>
+    </div>
+
+
+    <script>
+      var hamburger = document.getElementById("hamburger");
+      var mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+
+      // ── Language switcher dropdown ────────────────
+      var langBtn = document.getElementById("lang-btn");
+      var langDropdown = document.getElementById("lang-dropdown");
+      langBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = langDropdown.classList.toggle("hidden") === false;
+        langBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      document.addEventListener("click", function (e) {
+        if (!document.getElementById("lang-switcher").contains(e.target)) {
+          langDropdown.classList.add("hidden");
+          langBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+
+      var months = [
+        "JAN",
+        "FEB",
+        "MÄR",
+        "APR",
+        "MAI",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OKT",
+        "NOV",
+        "DEZ",
+      ];
+      var modal = document.getElementById("event-modal");
+      var closeModal = document.getElementById("close-modal");
+      var modalTitle = document.getElementById("modal-title");
+      var modalImage = document.getElementById("modal-image");
+      var modalShort = document.getElementById("modal-short");
+      var modalLong = document.getElementById("modal-long");
+
+
+      function openModal(ev) {
+        modalTitle.textContent = ev.titolo;
+        modalImage.src = ev.img || "";
+        modalImage.alt = ev.titolo || "Veranstaltung";
+        modalShort.textContent = ev.descrizione || "";
+        modalLong.textContent = ev["descrizione-lunga"] || "";
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+
+      function hideModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+
+      closeModal.addEventListener("click", hideModal);
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) hideModal();
+      });
+
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") hideModal();
+      });
+
+
+      fetch("./events-de.json")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (events) {
+          var c = document.getElementById("events-container");
+
+
+          c.innerHTML = events
+            .map(function (ev) {
+              var d = new Date(ev.data);
+              var day = String(d.getDate()).padStart(2, "0");
+              var mon = months[d.getMonth()];
+
+
+              return (
+                '<article class="bg-offwhite border border-black/10 rounded-2xl p-6 md:p-7 flex flex-col justify-between min-h-[280px]">' +
+                "<div>" +
+                '<div class="flex items-start justify-between gap-4 mb-5">' +
+                '<div class="inline-flex flex-col items-center justify-center rounded-xl bg-red text-white min-w-[64px] h-[72px] px-3 shrink-0">' +
+                '<span style="font-family:Barlow Condensed,sans-serif;font-size:1.75rem;font-weight:700;line-height:1;">' +
+                day +
+                "</span>" +
+                '<span style="font-family:Barlow Condensed,sans-serif;font-size:0.72rem;letter-spacing:0.14em;line-height:1.1;margin-top:0.25rem;">' +
+                mon +
+                "</span>" +
+                "</div>" +
+                '<span class="inline-flex items-center rounded-full border border-red/20 bg-red/5 text-red px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">' +
+                (ev.tag || "Veranstaltung") +
+                "</span>" +
+                "</div>" +
+                '<h3 class="text-spruce uppercase leading-none mb-3" style="font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:700;">' +
+                ev.titolo +
+                "</h3>" +
+                '<p class="text-ink/65 text-sm leading-relaxed mb-5">' +
+                ev.descrizione +
+                "</p>" +
+                "</div>" +
+                '<div class="flex items-center justify-between gap-4 pt-4 border-t border-black/10">' +
+                '<span class="text-xs uppercase tracking-[0.16em] text-ink/45 font-semibold">um ' +
+                ev.orario +
+                " Uhr</span>" +
+                '<button type="button" class="js-more text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70 transition-opacity" data-id="' +
+                ev.id +
+                '">' +
+                "Mehr →" +
+                "</button>" +
+                "</div>" +
+                "</article>"
+              );
+            })
+            .join("");
+
+
+          document.querySelectorAll(".js-more").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              var id = Number(btn.getAttribute("data-id"));
+              var ev = events.find(function (x) {
+                return Number(x.id) === id;
+              });
+              if (ev) openModal(ev);
+            });
+          });
+        })
+        .catch(function () {
+          document.getElementById("events-container").innerHTML =
+            '<p class="text-ink/45 text-sm col-span-full">Derzeit sind keine Veranstaltungen verfügbar.</p>';
+        });
+    </script>
+  </body>
+</html>

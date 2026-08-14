@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CASÈ — Handwerkliche Pizzeria in Wien. Entdecke unsere Geschichte"
+    />
+    <link rel="icon" type="image/png" href="assets/logoNeroCase.svg" />
+    <title>CASÈ — Entdecke unsere Geschichte</title>
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              linen: "#F0EAE0",
+              ink: "#07090A",
+              spruce: "#29411E",
+              red: "#C4272A",
+              offwhite: "#FAFAF7",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "sans-serif"],
+              body: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="bg-linen text-ink">
+    <!-- ═══════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════ -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index-de.html">
+            <img
+              src="./assets/logoBiancoCase.png"
+              alt="CASÈ Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16"
+            />
+          </a>
+
+
+          <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li>
+              <a
+                href="index-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Startseite</a
+              >
+            </li>
+            <li>
+              <a href="chi-siamo-de.html" class="nav-link active text-white"
+                >Über uns</a
+              >
+            </li>
+            <li>
+              <a
+                href="eventi-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Veranstaltungen</a
+              >
+            </li>
+            <li>
+              <a
+                href="contatti-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+
+
+          <span></span>
+
+
+          <!-- Hamburger -->
+          <button
+            id="hamburger"
+            class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-spruce border-t border-white/10"
+      >
+        <ul
+          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0 px-6 py-4"
+        >
+          <li>
+            <a
+              href="index-de.html"
+              class="block text-white py-3 text-sm border-b border-white/10 no-underline"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="chi-siamo-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Über uns</a
+            >
+          </li>
+          <li>
+            <a
+              href="eventi-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Veranstaltungen</a
+            >
+          </li>
+          <li>
+            <a
+              href="contatti-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm no-underline transition-colors"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════
+     MAIN
+═══════════════════════════════════════ -->
+
+
+    <main class="pt-0">
+      <!-- HERO -->
+      <section
+        class="bg-linen flex flex-col items-center px-6 pt-24"
+      >
+        <div
+          class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 !place-items-center"
+        >
+          <div class="flex flex-col items-center">
+            <h1 class="hero-title mb-6 md:ps-32 md:ms-60 text-5xl md:text-8xl">
+              PIZZA,<br />GASTFREUNDSCHAFT<br />UND IDENTITÄT.
+            </h1>
+          </div>
+        </div>
+        <div class="flex mt-auto">
+          <img
+            src="assets/imgChiara/mano-con-pizza.png"
+            class="w-64 md:w-[700px]"
+          />
+        </div>
+      </section>
+
+
+      <!-- STORIA -->
+      <section class="bg-offwhite px-6 py-24">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 relative z-20"
+        >
+          <div>
+            <span class="section-label">Unsere Geschichte</span>
+            <h2 class="section-title">EIN PROJEKT AUS<br />LEIDENSCHAFT</h2>
+          </div>
+          <div class="space-y-6">
+            <p class="text-ink leading-relaxed">
+              CASÉ ist das gemeinsame Projekt von Crescenzo und Viktoria,
+              entstanden aus ihrer Liebe für gutes Essen, echte
+              Gastfreundschaft und dem Wunsch, etwas Eigenes zu schaffen. <br />
+              <br />
+              Crescenzo stammt aus Caserta und lebt und arbeitet seit sieben
+              Jahren in Wien. Dort hat er mit lokalen Lokalen zusammengearbeitet
+              und bei der Eröffnung neuer neapolitanischer Pizzerien geholfen,
+              während er sein Handwerk verfeinerte und den Traditionen seiner
+              Heimatstadt treu blieb. <br />
+              <br />
+              An seiner Seite steht Viktoria, seine Lebenspartnerin und
+              Partnerin in diesem Projekt. Ihre internationale Perspektive und
+              ihre enge Verbindung zu Wien haben CASÉ zu einem einladenden und
+              zeitgemäßen Ort gemacht. Gemeinsam haben sie Wiens erste Pizzeria
+              im Caserta-Stil geschaffen, um die Aromen, Techniken und
+              Gastfreundschaft von Caserta zu teilen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- VALORI -->
+      <section class="bg-linen px-6 py-24">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12">
+            <span class="section-label">WIE WIR ARBEITEN</span>
+            <h2 class="section-title">DREI DINGE,<br />DIE ZÄHLEN</h2>
+          </div>
+
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <article class="event-card">
+              <div class="event-badge">01</div>
+              <h3
+                style="
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 1.35rem;
+                  text-transform: uppercase;
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Teig
+              </h3>
+              <p class="text-ink/55 text-sm leading-relaxed">
+                Wir arbeiten mit einem Vorteig, eine Entscheidung, die dem Teig
+                mehr Geschmack, eine ausgewogenere Struktur und eine bessere
+                Verdaulichkeit verleiht. Das Ergebnis ist eine Pizza mit klarem
+                Charakter: weich, aromatisch und voller Tiefe.
+              </p>
+            </article>
+
+
+            <article class="event-card">
+              <div class="event-badge">02</div>
+              <h3
+                style="
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 1.35rem;
+                  text-transform: uppercase;
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Zutaten
+              </h3>
+              <p class="text-ink/55 text-sm leading-relaxed">
+                Wir wählen sorgfältig Mehlsorten aus, die sich für mittlere und
+                lange Gärzeiten eignen, im Einklang mit einem durchdachten und
+                präzisen Teigherstellungsprozess. Ein wichtiger Teil dieses
+                Weges ist unsere Zusammenarbeit mit Molini Pizzuti, einem
+                italienischen Mehlproduzenten, der für Produkte bekannt ist, die
+                für lange Gärzeiten bei Pizzateig entwickelt wurden.
+              </p>
+            </article>
+
+
+            <article class="event-card">
+              <div class="event-badge">03</div>
+              <h3
+                style="
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 1.35rem;
+                  text-transform: uppercase;
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Tradition trifft Forschung
+              </h3>
+              <p class="text-ink/55 text-sm leading-relaxed">
+                Jede Pizza ist das Ergebnis einer Begegnung zwischen Tradition
+                und Forschung. Neben den Klassikern bieten wir zeitgemäße
+                Interpretationen und originelle Kombinationen an, die einen
+                unverkennbaren persönlichen Stil ausdrücken.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ESPERIENZA -->
+      <section class="bg-spruce text-white px-6 py-24">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <div
+            class="aspect-square bg-white/5 rounded-md overflow-hidden flex items-center justify-center"
+          >
+            <img
+              src="./assets/pizza-di-crescenzo.jpeg"
+              alt="Bild einer Pizza"
+              class="object-contain opacity-95"
+            />
+          </div>
+
+
+          <div>
+            <span class="section-label" style="color: #f0eae0"
+              >Unser Versprechen</span
+            >
+            <h2 class="section-title" style="color: white">
+              NICHT NUR<br />EINE PIZZA
+            </h2>
+            <p class="text-white/70 leading-relaxed mb-5">
+              CASÉ wurde geschaffen, um ein echtes Stück Caserta nach Wien zu
+              bringen — im Geschmack, in der Gastfreundschaft und in der Art,
+              wie wir Menschen an unseren Tisch einladen. Jedes Detail, vom Teig
+              bis zur Atmosphäre, wurde entwickelt, um Authentizität, Qualität
+              und ein Gefühl von Zuhause zu vermitteln.
+            </p>
+            <p class="text-white/70 leading-relaxed">
+              Wer CASÉ betritt, findet Pizza mit Absicht, eine ehrliche
+              Atmosphäre und ein Projekt, das Qualität an erste Stelle setzt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CTA -->
+      <section
+        class="bg-red py-20 px-6 text-center"
+        style="background: #c4272a"
+      >
+        <div class="max-w-3xl mx-auto">
+          <h2
+            style="
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-weight: 700;
+              font-size: clamp(2rem, 5vw, 4rem);
+              text-transform: uppercase;
+              color: white;
+              line-height: 1;
+              margin-bottom: 1rem;
+            "
+          >
+            NUR OHNE RESERVIERUNG. KOMM EINFACH VORBEI...
+          </h2>
+          <p class="text-white/70 text-base mb-8">
+            Komm einfach vorbei und erlebe den wahren Geschmack von Caserta im
+            Herzen Wiens. Wir freuen uns darauf, dich bei CASÉ willkommen zu
+            heißen und unsere Leidenschaft für Pizza und Gastfreundschaft mit
+            dir zu teilen.
+          </p>
+          <a
+            href="contatti-de.html"
+            style="
+              display: inline-block;
+              background: white;
+              color: #c4272a;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-weight: 700;
+              font-size: 0.85rem;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              padding: 0.8rem 2rem;
+              border-radius: 3px;
+              text-decoration: none;
+            "
+            >ZUM KONTAKT →</a
+          >
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+    <footer class="bg-spruce text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <img
+                src="./assets/logoCase.svg"
+                alt="CASÈ Logo"
+                width="150"
+                height="100"
+              />
+            </div>
+            <p class="text-white/55 text-sm leading-relaxed max-w-xs">
+              Mehr als nur eine Pizzeria — eine gemütliche Ecke, um zur Ruhe zu
+              kommen und sich wohlzufühlen.
+            </p>
+            <div class="flex gap-2 mt-5">
+              <a
+                href="https://www.instagram.com/casepizzeria/"
+                class="social-btn"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Nav -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Navigation
+            </p>
+            <ul class="flex flex-col gap-2 list-none p-0 m-0">
+              <li><a href="index-de.html" class="footer-link">Startseite</a></li>
+              <li>
+                <a href="chi-siamo-de.html" class="footer-link">Über uns</a>
+              </li>
+              <li><a href="eventi-de.html" class="footer-link">Veranstaltungen</a></li>
+              <li>
+                <a href="contatti-de.html" class="footer-link">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contacts -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Wo wir sind
+            </p>
+            <div class="flex flex-col gap-2">
+              <span class="footer-link">Rokitanskygasse 11, 1170 Wien</span>
+              <a href="tel:+436605744418" class="footer-link"
+                >+43 660 57 44 418</a
+              >
+              <a href="mailto:ciao@case-pizza.at" class="footer-link"
+                >ciao@case-pizza.at</a
+              >
+              <span class="text-white/35 text-xs mt-1"
+                >Mo–So: 12:00–22:00 · Mittwoch Ruhetag</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
+        >
+          <p class="text-white/30 text-xs">
+            © 2026 CASÈ Pizzeria. Alle Rechte vorbehalten.
+          </p>
+          <p class="text-white/30 text-xs">USt-IdNr. ATU83460559</p>
+          <p class="text-white/30 text-xs">
+            Powered by
+            <img
+              src="assets/logoC3W.jpeg"
+              alt="logo C3W"
+              width="35"
+              height="35"
+            />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+     LANGUAGE SWITCHER
+═══════════════════════════════════════ -->
+    <div class="fixed bottom-6 left-6 z-50" id="lang-switcher">
+      <button
+        id="lang-btn"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-ink/10 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
+        aria-label="Sprache ändern"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <!-- DE flag -->
+        <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
+      </button>
+
+      <!-- Dropdown -->
+      <div
+        id="lang-dropdown"
+        class="hidden absolute bottom-16 left-0 bg-white rounded-md shadow-lg border border-ink/10 py-2 min-w-[150px]"
+      >
+        <button
+          type="button"
+          class="w-full flex items-center gap-3 px-4 py-2 text-sm text-ink hover:bg-linen transition-colors"
+        >
+          <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+          <a href="chi-siamo.html"> English </a>
+        </button>
+      </div>
+    </div>
+
+
+    <script>
+      // ── Navbar hamburger ──────────────────────────
+      var hamburger = document.getElementById("hamburger");
+      var mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ── Language switcher dropdown ────────────────
+      var langBtn = document.getElementById("lang-btn");
+      var langDropdown = document.getElementById("lang-dropdown");
+      langBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = langDropdown.classList.toggle("hidden") === false;
+        langBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      document.addEventListener("click", function (e) {
+        if (!document.getElementById("lang-switcher").contains(e.target)) {
+          langDropdown.classList.add("hidden");
+          langBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontaktiere CASÈ — Handwerkliche Pizzeria in Wien. Reservierungen, private Veranstaltungen, Informationen und Öffnungszeiten."
+    />
+    <link rel="icon" type="image/png" href="assets/logoNeroCase.svg" />
+    <title>CASÈ — Kontakt</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              linen: "#F0EAE0",
+              ink: "#07090A",
+              spruce: "#29411E",
+              red: "#C4272A",
+              offwhite: "#FAFAF7",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "sans-serif"],
+              body: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+
+  <body class="bg-linen text-ink">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-spruce">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="index-de.html">
+            <img
+              src="./assets/logoBiancoCase.png"
+              alt="CASÈ Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16"
+            />
+          </a>
+
+
+          <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            <li>
+              <a
+                href="index-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Startseite</a
+              >
+            </li>
+            <li>
+              <a
+                href="chi-siamo-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Über uns</a
+              >
+            </li>
+            <li>
+              <a
+                href="eventi-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Veranstaltungen</a
+              >
+            </li>
+            <li>
+              <a href="contatti-de.html" class="nav-link active text-white"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+
+
+          <span></span>
+
+
+          <button
+            id="hamburger"
+            class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-spruce border-t border-white/10"
+      >
+        <ul
+          class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1 list-none m-0 p-0"
+        >
+          <li>
+            <a
+              href="index-de.html"
+              class="block text-white py-3 text-sm border-b border-white/10 no-underline"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="chi-siamo-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Über uns</a
+            >
+          </li>
+          <li>
+            <a
+              href="eventi-de.html"
+              class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
+              >Veranstaltungen</a
+            >
+          </li>
+          <li>
+            <a
+              href="contatti-de.html"
+              class="block text-white py-3 text-sm no-underline"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main class="pt-16">
+      <section class="bg-spruce text-white px-6">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8 items-end lg:pb-24"
+        >
+          <!-- Colonna 1: Testo -->
+          <div>
+            <p
+              class="text-white/45 text-xs tracking-[0.22em] uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Kontakt
+            </p>
+
+
+            <h1
+              class="text-5xl md:text-7xl uppercase leading-none"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Finden wir deinen Tisch
+            </h1>
+
+
+            <p
+              class="text-white/70 text-sm md:text-base mt-5 max-w-md leading-relaxed"
+            >
+              Für <strong>Gruppen</strong>reservierungen, private Veranstaltungen oder einfach um
+              vorbeizukommen, findest du hier alle nötigen Kontaktinformationen.
+            </p>
+          </div>
+
+
+          <!-- Colonna 2: Immagine -->
+          <div class="flex justify-center order-3 lg:order-2 lg:translate-y-24">
+            <img
+              src="./assets/imgChiara/contatti.png"
+              alt="Handwerkliche Pizza"
+              class="w-full max-w-[340px] lg:max-w-none h-auto object-contain"
+            />
+          </div>
+
+
+          <!-- Colonna 3: Contatti -->
+          <div class="order-2 lg:order-3">
+            <div
+              class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 backdrop-blur-sm"
+            >
+              <p
+                class="text-white/40 text-xs tracking-[0.18em] uppercase font-semibold mb-4"
+                style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+              >
+                Schnellübersicht
+              </p>
+
+
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    Telefon
+                  </div>
+
+
+                  <a
+                    href="tel:+436605744418"
+                    class="text-white hover:text-white/75 transition"
+                  >
+                    +43 660 57 44 418
+                  </a>
+                </div>
+
+
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    E-Mail
+                  </div>
+
+
+                  <a
+                    href="mailto:ciao@case-pizza.at"
+                    class="text-white hover:text-white/75 transition"
+                  >
+                    ciao@case-pizza.at
+                  </a>
+                </div>
+
+
+                <div>
+                  <div
+                    class="text-white/45 uppercase tracking-[0.16em] text-[11px] mb-1"
+                  >
+                    Adresse
+                  </div>
+
+
+                  <p class="text-white/85">Rokitanskygasse 11, 1170 Wien</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="px-6 py-14 md:py-20">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6"
+        >
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Ruf Uns An
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Bestellen & Abholen
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Ruf uns an, um deine Pizza zum Abholen zu bestellen.
+            </p>
+            <a
+              href="tel:+436605744418"
+              class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+            >
+              +43 660 57 44 418
+            </a>
+          </article>
+
+
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Schreib Uns
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Veranstaltungen & Infos
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Für private Veranstaltungen, Kooperationen oder alle weiteren
+              Informationen, die du brauchst.
+            </p>
+            <a
+              href="mailto:ciao@case-pizza.at"
+              class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+            >
+              ciao@case-pizza.at
+            </a>
+          </article>
+
+
+          <article class="bg-offwhite border border-black/10 rounded-2xl p-6">
+            <p
+              class="text-red text-xs uppercase tracking-[0.18em] font-semibold mb-3"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Öffnungszeiten
+            </p>
+            <h2
+              class="text-spruce text-3xl uppercase leading-none mb-3"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Bis Bald
+            </h2>
+            <p class="text-ink/60 text-sm leading-relaxed mb-5">
+              Wir sind von Montag bis Sonntag zum Mittag- und Abendessen
+              geöffnet. Mittwoch haben wir Ruhetag.
+            </p>
+            <p class="text-ink/80 text-sm">
+              Mo–So: 12:00–22:00 · Mittwoch Ruhetag.
+            </p>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="px-6 pb-16 md:pb-20">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8"
+        >
+          <div class="bg-spruce text-white rounded-[28px] p-6 md:p-8">
+            <p
+              class="text-white/40 text-xs tracking-[0.18em] uppercase font-semibold mb-3"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Besuch Uns
+            </p>
+            <h2
+              class="text-4xl md:text-5xl uppercase leading-none mb-4"
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+              "
+            >
+              Komm uns im 17. Bezirk besuchen
+            </h2>
+            <p class="text-white/70 text-sm leading-relaxed mb-6 max-w-md">
+              Ein warmer, einfacher und authentischer Ort. Perfekt für ein
+              entspanntes Abendessen, eine Pizza mit Freunden oder einen
+              besonderen Abend.
+            </p>
+
+
+            <div class="space-y-4 text-sm">
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Adresse
+                </div>
+                <p class="text-white/90">Rokitanskygasse 11, 1170 Wien</p>
+              </div>
+
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Öffnungszeiten
+                </div>
+                <p class="text-white/90">
+                  Mo–So: 12:00–22:00 · Mittwoch Ruhetag.
+                </p>
+              </div>
+
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  Telefon
+                </div>
+                <a
+                  href="tel:+436605744418"
+                  class="text-white/90 hover:text-white"
+                >
+                  +43 660 57 44 418
+                </a>
+              </div>
+
+
+              <div class="border-t border-white/10 pt-4">
+                <div
+                  class="text-white/40 text-[11px] uppercase tracking-[0.16em] mb-1"
+                >
+                  E-Mail
+                </div>
+                <a
+                  href="mailto:ciao@case-pizza.at"
+                  class="text-white/90 hover:text-white"
+                >
+                  ciao@case-pizza.at
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div
+            class="bg-offwhite border border-black/10 rounded-[28px] overflow-hidden"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.221242454876!2d16.326317266620677!3d48.22161424277706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d08760196937b%3A0x8f807bbadf9c753!2sRokitanskygasse%2011%2C%201170%20Wien%2C%20Austria!5e0!3m2!1sit!2sit!4v1785775124772!5m2!1sit!2sit"
+              class="w-full aspect-[4/3] border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+
+            <div class="p-5 border-t border-black/10">
+              <a
+                href="https://maps.app.goo.gl/uKZf3twSP29XaLH76"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-red text-sm uppercase tracking-[0.14em] font-semibold hover:opacity-70"
+              >
+                In Google Maps öffnen →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="bg-spruce text-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <img
+                src="./assets/logoCase.svg"
+                alt="CASÈ Logo"
+                width="150"
+                height="100"
+              />
+            </div>
+            <p class="text-white/55 text-sm leading-relaxed max-w-xs">
+              Mehr als nur eine Pizzeria — eine gemütliche Ecke, um zur Ruhe zu
+              kommen und sich zu entspannen.
+            </p>
+            <div class="flex gap-2 mt-5">
+              <a
+                href="https://www.instagram.com/casepizzeria/"
+                class="social-btn"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Navigation
+            </p>
+            <ul class="flex flex-col gap-2 list-none p-0 m-0">
+              <li><a href="index-de.html" class="footer-link">Startseite</a></li>
+              <li>
+                <a href="chi-siamo-de.html" class="footer-link">Über uns</a>
+              </li>
+              <li><a href="eventi-de.html" class="footer-link">Veranstaltungen</a></li>
+              <li><a href="contatti-de.html" class="footer-link">Kontakt</a></li>
+            </ul>
+          </div>
+
+
+          <!-- Contacts -->
+          <div>
+            <p
+              class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
+              style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
+            >
+              Wo wir sind
+            </p>
+            <div class="flex flex-col gap-2">
+              <span class="footer-link">Rokitanskygasse 11, 1170 Wien</span>
+              <a href="tel:+436605744418" class="footer-link"
+                >+43 660 57 44 418</a
+              >
+              <a href="mailto:ciao@case-pizza.at" class="footer-link"
+                >ciao@case-pizza.at</a
+              >
+              <span class="text-white/35 text-xs mt-1"
+                >Mo–So: 12:00–22:00 · Mittwoch Ruhetag</span
+              >
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
+        >
+          <p class="text-white/30 text-xs">
+            © 2026 CASÈ Pizzeria. Alle Rechte vorbehalten.
+          </p>
+          <p class="text-white/30 text-xs">USt-IdNr. ATU83460559</p>
+          <p class="text-white/30 text-xs">
+            Powered by
+            <img
+              src="assets/logoC3W.jpeg"
+              alt="logo C3W"
+              width="35"
+              height="35"
+            />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- ═══════════════════════════════════════
+     LANGUAGE SWITCHER
+═══════════════════════════════════════ -->
+    <div class="fixed bottom-6 left-6 z-50" id="lang-switcher">
+      <button
+        id="lang-btn"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-ink/10 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
+        aria-label="Sprache ändern"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <!-- DE flag -->
+        <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
+      </button>
+
+      <!-- Dropdown -->
+      <div
+        id="lang-dropdown"
+        class="hidden absolute bottom-16 left-0 bg-white rounded-md shadow-lg border border-ink/10 py-2 min-w-[150px]"
+      >
+        <button
+          type="button"
+          class="w-full flex items-center gap-3 px-4 py-2 text-sm text-ink hover:bg-linen transition-colors"
+        >
+          <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+          <a href="contatti.html"> English </a>
+        </button>
+      </div>
+    </div>
+
+
+    <script>
+      var hamburger = document.getElementById("hamburger");
+      var mobileMenu = document.getElementById("mobile-menu");
+
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+
+      // ── Language switcher dropdown ────────────────
+      var langBtn = document.getElementById("lang-btn");
+      var langDropdown = document.getElementById("lang-dropdown");
+      langBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = langDropdown.classList.toggle("hidden") === false;
+        langBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      document.addEventListener("click", function (e) {
+        if (!document.getElementById("lang-switcher").contains(e.target)) {
+          langDropdown.classList.add("hidden");
+          langBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
+  </body>
+</html>

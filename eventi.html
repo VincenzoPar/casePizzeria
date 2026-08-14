@@ -326,6 +326,38 @@
       </div>
     </div>
 
+    <!-- ═══════════════════════════════════════
+     LANGUAGE SWITCHER
+═══════════════════════════════════════ -->
+    <div class="fixed bottom-6 left-6 z-50" id="lang-switcher">
+      <button
+        id="lang-btn"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-ink/10 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
+        aria-label="Change language"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <!-- UK flag -->
+        <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+      </button>
+
+      <!-- Dropdown -->
+      <div
+        id="lang-dropdown"
+        class="hidden absolute bottom-16 left-0 bg-white rounded-md shadow-lg border border-ink/10 py-2 min-w-[150px]"
+      >
+        <button
+          type="button"
+          class="w-full flex items-center gap-3 px-4 py-2 text-sm text-ink hover:bg-linen transition-colors"
+        >
+          <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
+          <a href="eventi-de.html">
+            Deutsch
+          </a>
+        </button>
+      </div>
+    </div>
+
     <script>
       var hamburger = document.getElementById("hamburger");
       var mobileMenu = document.getElementById("mobile-menu");
@@ -338,6 +370,21 @@
         document
           .getElementById("navbar")
           .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ── Language switcher dropdown ────────────────
+      var langBtn = document.getElementById("lang-btn");
+      var langDropdown = document.getElementById("lang-dropdown");
+      langBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = langDropdown.classList.toggle("hidden") === false;
+        langBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      document.addEventListener("click", function (e) {
+        if (!document.getElementById("lang-switcher").contains(e.target)) {
+          langDropdown.classList.add("hidden");
+          langBtn.setAttribute("aria-expanded", "false");
+        }
       });
 
       var months = [

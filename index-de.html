@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CASÈ — Artisanal pizzeria in Vienna." />
+    <meta name="description" content="CASÈ — Handwerkliche Pizzeria in Wien." />
     <link rel="icon" type="image/png" href="assets/logoNeroCase.svg" />
-    <title>CASÈ — Artisanal pizzeria in Vienna.</title>
+    <title>CASÈ — Handwerkliche Pizzeria in Wien.</title>
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -74,7 +74,7 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <a href="index.html">
+          <a href="index-de.html">
             <img
               src="./assets/logoBiancoCase.png"
               alt="CASÈ logo"
@@ -84,27 +84,29 @@
           <!-- Desktop links -->
           <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
             <li>
-              <a href="index.html" class="nav-link active text-white">Home</a>
-            </li>
-            <li>
-              <a
-                href="chi-siamo.html"
-                class="nav-link text-white/75 hover:text-white"
-                >About</a
+              <a href="index-de.html" class="nav-link active text-white"
+                >Startseite</a
               >
             </li>
             <li>
               <a
-                href="eventi.html"
+                href="chi-siamo-de.html"
                 class="nav-link text-white/75 hover:text-white"
-                >Events</a
+                >Über uns</a
               >
             </li>
             <li>
               <a
-                href="contatti.html"
+                href="eventi-de.html"
                 class="nav-link text-white/75 hover:text-white"
-                >Contacts</a
+                >Veranstaltungen</a
+              >
+            </li>
+            <li>
+              <a
+                href="contatti-de.html"
+                class="nav-link text-white/75 hover:text-white"
+                >Kontakt</a
               >
             </li>
           </ul>
@@ -115,7 +117,7 @@
           <button
             id="hamburger"
             class="hamburger md:hidden flex flex-col gap-1.5 p-2 bg-transparent border-0 cursor-pointer"
-            aria-label="Open the menu"
+            aria-label="Menü öffnen"
           >
             <span></span><span></span><span></span>
           </button>
@@ -132,30 +134,30 @@
         >
           <li>
             <a
-              href="index.html"
+              href="index-de.html"
               class="block text-white py-3 text-sm border-b border-white/10 no-underline"
-              >Home</a
+              >Startseite</a
             >
           </li>
           <li>
             <a
-              href="chi-siamo.html"
+              href="chi-siamo-de.html"
               class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
-              >About</a
+              >Über uns</a
             >
           </li>
           <li>
             <a
-              href="eventi.html"
+              href="eventi-de.html"
               class="block text-white/75 hover:text-white py-3 text-sm border-b border-white/10 no-underline transition-colors"
-              >Events</a
+              >Veranstaltungen</a
             >
           </li>
           <li>
             <a
-              href="contatti.html"
+              href="contatti-de.html"
               class="block text-white/75 hover:text-white py-3 text-sm no-underline transition-colors"
-              >Contacts</a
+              >Kontakt</a
             >
           </li>
         </ul>
@@ -175,25 +177,26 @@
         >
           <!-- Colonna testo -->
           <div class="relative z-20 animate-fade-in-up order-1">
-            <span class="section-label">Wien · Since 2026</span>
+            <span class="section-label">Wien · Seit 2026</span>
 
             <h1 class="hero-title mb-6">
-              MADE<br />
-              WITH
+              MIT<br />
+              HÄNDEN
               <span class="hero-word-swap">
-                <span class="word word-hands text-spruce">HANDS</span>
+                <span class="word word-hands text-spruce">GEMACHT</span>
               </span>
             </h1>
 
             <p
               class="text-ink hidden md:block text-base leading-relaxed max-w-xs mb-8"
             >
-              Artisan pizza, wholesome ingredients, a place to relax. No rush.
+              Handwerkliche Pizza, gesunde Zutaten, ein Ort zum Entspannen.
+              Keine Eile.
             </p>
 
             <div class="flex gap-4 flex-wrap relative z-30">
               <a
-                href="menu.html"
+                href="menu-de.html"
                 class="btn-cta whitespace-nowrap"
                 style="
                   padding: 0.7rem 1.6rem;
@@ -201,14 +204,14 @@
                   letter-spacing: 0.14em;
                 "
               >
-                GO TO THE MENU →
+                ZUR SPEISEKARTE →
               </a>
 
               <a
-                href="chi-siamo.html"
+                href="chi-siamo-de.html"
                 class="inline-block bg-linen text-ink font-display font-bold text-[0.85rem] tracking-[0.14em] uppercase px-[1.4rem] py-[0.65rem] rounded-[3px] border border-ink no-underline transition hover:bg-ink hover:text-white"
               >
-                ABOUT
+                ÜBER UNS
               </a>
             </div>
           </div>
@@ -244,18 +247,20 @@
             />
           </div>
           <div class="reveal">
-            <span class="section-label">Our Story</span>
-            <h2 class="section-title">We Are<br />CASÈ</h2>
+            <span class="section-label">Unsere Geschichte</span>
+            <h2 class="section-title">Wir sind<br />CASÈ</h2>
             <p class="text-ink/60 text-base leading-relaxed max-w-prose mb-4">
-              CASÈ is more than a pizzeria — it's a cozy corner where people
-              slow down, connect, and enjoy warmth in its most playful form.
+              CASÈ ist mehr als eine Pizzeria — es ist eine gemütliche Ecke, in
+              der Menschen zur Ruhe kommen, sich verbinden und Wärme in ihrer
+              verspieltesten Form genießen.
             </p>
             <p class="text-ink/60 text-base leading-relaxed max-w-prose mb-7">
-              Born from a love for well-made dough and genuine conviviality.
-              Every pizza is a gesture made by hand.
+              Geboren aus der Liebe zu gut gemachtem Teig und echter
+              Geselligkeit. Jede Pizza ist eine Geste, die von Hand gemacht
+              wird.
             </p>
             <a
-              href="chi-siamo.html"
+              href="chi-siamo-de.html"
               style="
                 display: inline-block;
                 background: transparent;
@@ -281,7 +286,7 @@
                 this.style.background = 'transparent';
                 this.style.color = '#07090A';
               "
-              >DISCOVER MORE →</a
+              >MEHR ENTDECKEN →</a
             >
           </div>
         </div>
@@ -326,7 +331,7 @@
               class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
               style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-              Passion for things done right
+              Leidenschaft für gut gemachte Dinge
             </div>
           </div>
           <div
@@ -341,7 +346,7 @@
               class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
               style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-              Love for Sharing
+              Liebe zum Teilen
             </div>
           </div>
           <div
@@ -356,7 +361,7 @@
               class="text-white/55 text-s tracking-widest uppercase mt-2 font-semibold"
               style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-              Italian Ingredients
+              Italienische Zutaten
             </div>
           </div>
         </div>
@@ -372,11 +377,11 @@
                 class="section-title"
                 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0"
               >
-                Upcoming<br />Events
+                Kommende<br />Veranstaltungen
               </h2>
             </div>
             <a
-              href="eventi.html"
+              href="eventi-de.html"
               style="
                 font-family: &quot;Barlow Condensed&quot;, sans-serif;
                 font-weight: 700;
@@ -390,7 +395,7 @@
               "
               onmouseover="this.style.opacity = '0.7'"
               onmouseout="this.style.opacity = '1'"
-              >DISCOVER ALL →</a
+              >ALLE ENTDECKEN →</a
             >
           </div>
           <div
@@ -444,13 +449,14 @@
               margin-bottom: 1rem;
             "
           >
-            Come and visit us.<br />Bring your appetite.
+            Besuchen Sie uns.<br />Bringen Sie Ihren Appetit mit.
           </h2>
           <p class="text-white/70 text-base mb-8">
-            Open Monday to Sunday for lunch and dinner. Closed on Wednesdays.
+            Montag bis Sonntag geöffnet für Mittag- und Abendessen. Mittwochs
+            geschlossen.
           </p>
           <a
-            href="menu.html"
+            href="menu-de.html"
             style="
               display: inline-block;
               background: white;
@@ -475,7 +481,7 @@
               this.style.opacity = '1';
               this.style.transform = 'translateY(0)';
             "
-            >GO TO THE MENU →</a
+            >ZUR SPEISEKARTE →</a
           >
         </div>
         <div class="w-full flex justify-end lg:px-24">
@@ -505,8 +511,8 @@
               />
             </div>
             <p class="text-white/55 text-sm leading-relaxed max-w-xs">
-              More than just a pizzeria — a cosy spot where you can relax and
-              feel at home.
+              Mehr als nur eine Pizzeria — ein gemütlicher Ort, an dem Sie sich
+              entspannen und wie zu Hause fühlen können.
             </p>
             <div class="flex gap-2 mt-5">
               <a
@@ -541,12 +547,14 @@
               Navigation
             </p>
             <ul class="flex flex-col gap-2 list-none p-0 m-0">
-              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="index-de.html" class="footer-link">Startseite</a></li>
               <li>
-                <a href="chi-siamo.html" class="footer-link">About Us</a>
+                <a href="chi-siamo-de.html" class="footer-link">Über uns</a>
               </li>
-              <li><a href="eventi.html" class="footer-link">Events</a></li>
-              <li><a href="contatti.html" class="footer-link">Contacts</a></li>
+              <li>
+                <a href="eventi-de.html" class="footer-link">Veranstaltungen</a>
+              </li>
+              <li><a href="contatti-de.html" class="footer-link">Kontakt</a></li>
             </ul>
           </div>
           <!-- Contacts -->
@@ -555,7 +563,7 @@
               class="text-white/40 text-xs tracking-widest uppercase font-semibold mb-4"
               style="font-family: &quot;Barlow Condensed&quot;, sans-serif"
             >
-              Where we are
+              Wo wir sind
             </p>
             <div class="flex flex-col gap-2">
               <span class="footer-link">Rokitanskygasse 11, 1170 Wien</span>
@@ -566,7 +574,7 @@
                 >ciao@case-pizza.at</a
               >
               <span class="text-white/35 text-xs mt-1"
-                >Mon–Sun: 12:00–22:00 · Closed on Wednesdays</span
+                >Mo–So: 12:00–22:00 Uhr · Mittwochs geschlossen</span
               >
             </div>
           </div>
@@ -575,9 +583,9 @@
           class="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3"
         >
           <p class="text-white/30 text-xs">
-            © 2026 CASÈ Pizzeria. All rights reserved.
+            © 2026 CASÈ Pizzeria. Alle Rechte vorbehalten.
           </p>
-          <p class="text-white/30 text-xs">VAT ATU83460559</p>
+          <p class="text-white/30 text-xs">USt-IdNr. ATU83460559</p>
           <p class="text-white/30 text-xs">
             Powered by
             <img
@@ -598,12 +606,12 @@
       <button
         id="lang-btn"
         class="w-12 h-12 rounded-full bg-white shadow-lg border border-ink/10 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform"
-        aria-label="Change language"
+        aria-label="Sprache ändern"
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <!-- UK flag -->
-        <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+        <!-- DE flag -->
+        <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
       </button>
 
       <!-- Dropdown -->
@@ -615,10 +623,8 @@
           type="button"
           class="w-full flex items-center gap-3 px-4 py-2 text-sm text-ink hover:bg-linen transition-colors"
         >
-          <img src="assets/german-flag.svg" alt="flag of Germany" class="w-6">
-          <a href="index-de.html">
-            Deutsch
-          </a>
+          <img src="assets/uk-flag.png" alt="flag of uk" class="w-6">
+          <a href="index.html"> English </a>
         </button>
       </div>
     </div>
@@ -693,9 +699,9 @@
                 ev.descrizione +
                 "</p>" +
                 '<div style="display:flex;align-items:center;justify-content:space-between;">' +
-                '<span style="font-size:0.78rem;color:rgba(7,9,10,0.4);">ore ' +
+                '<span style="font-size:0.78rem;color:rgba(7,9,10,0.4);">um ' +
                 ev.orario +
-                "</span>" +
+                " Uhr</span>" +
                 '<span class="event-tag-chip">' +
                 ev.tag +
                 "</span>" +
@@ -707,7 +713,7 @@
         })
         .catch(function () {
           document.getElementById("events-container").innerHTML =
-            '<p style="color:rgba(7,9,10,0.4);font-size:0.875rem;grid-column:1/-1;">No events are currently available.</p>';
+            '<p style="color:rgba(7,9,10,0.4);font-size:0.875rem;grid-column:1/-1;">Derzeit sind keine Veranstaltungen verfügbar.</p>';
         });
     </script>
   </body>
