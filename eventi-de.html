@@ -465,6 +465,11 @@
         .then(function (events) {
           var c = document.getElementById("events-container");
 
+          if (!events || events.length === 0) {
+            c.innerHTML =
+              '<p class="text-ink/45 text-sm col-span-full">Derzeit sind keine Veranstaltungen verfügbar.</p>';
+            return;
+          }
 
           c.innerHTML = events
             .map(function (ev) {

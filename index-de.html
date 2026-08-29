@@ -679,6 +679,13 @@
         })
         .then(function (events) {
           var c = document.getElementById("events-container");
+
+          if (!events || events.length === 0) {
+            c.innerHTML =
+              '<p style="color:rgba(7,9,10,0.4);font-size:0.875rem;grid-column:1/-1;">Derzeit sind keine Veranstaltungen verfügbar.</p>';
+            return;
+          }
+
           c.innerHTML = events
             .slice(0, 3)
             .map(function (ev) {
